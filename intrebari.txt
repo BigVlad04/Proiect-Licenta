@@ -1,0 +1,9 @@
+cum adaugi elemente first person (mana, etc)
+player-ul poate sta lipit de pereti
+cum impui un slope maxim pe care poti urca (aluneca in jos daca inclinare > x)
+
+incearca sa adaugi sprint?
+
+
+
+https://www.youtube.com/watch?v=cuQao3hEKfs&list=PLPV2KyIb3jR5qEyOlJImGFoHcxg9XUQci&index=14
