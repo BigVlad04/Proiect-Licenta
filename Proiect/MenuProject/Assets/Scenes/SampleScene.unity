@@ -662,7 +662,7 @@ MonoBehaviour:
   playerHeight: 3
   Ground:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   jumpForce: 12
   jumpCooldown: 2
   airMultiplier: 0.4
