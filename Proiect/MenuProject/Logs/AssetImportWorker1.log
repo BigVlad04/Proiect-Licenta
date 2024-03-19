@@ -1,0 +1,1603 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.8f1 (b5eafc012955) revision 11922172'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 16291 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+D:/Facultate/Licenta/Proiect/MenuProject
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+50471
+Successfully changed project path to: D:/Facultate/Licenta/Proiect/MenuProject
+D:/Facultate/Licenta/Proiect/MenuProject
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [6048] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2582665041 [EditorId] 2582665041 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-SKDL8GU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [6048] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2582665041 [EditorId] 2582665041 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-SKDL8GU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 5.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.8f1 (b5eafc012955)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Facultate/Licenta/Proiect/MenuProject/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
+    Vendor:   NVIDIA
+    VRAM:     5955 MB
+    Driver:   31.0.15.5152
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56668
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.014018 seconds.
+- Loaded All Assemblies, in  0.396 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.270 seconds
+Domain Reload Profiling: 663ms
+	BeginReloadAssembly (113ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (70ms)
+	LoadAllAssembliesAndSetupDomain (144ms)
+		LoadAssemblies (110ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (142ms)
+			TypeCache.Refresh (141ms)
+				TypeCache.ScanAssembly (127ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (270ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (210ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (135ms)
+			ProcessInitializeOnLoadMethodAttributes (55ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.617 seconds
+Refreshing native plugins compatible for Editor in 1.67 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.590 seconds
+Domain Reload Profiling: 1205ms
+	BeginReloadAssembly (158ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (365ms)
+		LoadAssemblies (283ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (175ms)
+			TypeCache.Refresh (155ms)
+				TypeCache.ScanAssembly (141ms)
+			ScanForSourceGeneratedMonoScriptInfo (14ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (591ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (427ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (61ms)
+			ProcessInitializeOnLoadAttributes (327ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.98 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3092 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (56.4 KB). Loaded Objects now: 3555.
+Memory consumption went from 118.2 MB to 118.1 MB.
+Total: 2.888100 ms (FindLiveObjects: 0.236000 ms CreateObjectMapping: 0.250200 ms MarkObjects: 2.300400 ms  DeleteObjects: 0.100600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 899.220919 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURWExtWid-ExtBol.ttf
+  artifactKey: Guid(a1a0ab7c14769324fad76bb8d6405682) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURWExtWid-ExtBol.ttf using Guid(a1a0ab7c14769324fad76bb8d6405682) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c683adee78451711a432bc0e07f8f356') in 0.261018 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TextMesh Pro/Fonts/BodoniURW-MedObl.ttf
+  artifactKey: Guid(102468cebace95440a953628671c4f1c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BodoniURW-MedObl.ttf using Guid(102468cebace95440a953628671c4f1c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '96dc46eaa74d1e1589e5e9902a09b4cc') in 0.085048 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Fonts/Bison-Bold.ttf
+  artifactKey: Guid(956cd4d7211453e4b8c3da9bf4da1388) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Bison-Bold.ttf using Guid(956cd4d7211453e4b8c3da9bf4da1388) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6570ee616f5b8dde5969dafb7526f327') in 0.062543 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Fonts/Bison-RegularItalic.ttf
+  artifactKey: Guid(f205b92e283bd874087237bac2280cd0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Bison-RegularItalic.ttf using Guid(f205b92e283bd874087237bac2280cd0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1dfa84f498f1b9c08306ac09a628b545') in 0.035277 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURWWid-Reg.ttf
+  artifactKey: Guid(5cafa6e0b147cf444a52152c863429ac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURWWid-Reg.ttf using Guid(5cafa6e0b147cf444a52152c863429ac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ef15de47a28274f0345e5d90131e71a4') in 0.036176 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Fonts/Bison-ThinOutline.ttf
+  artifactKey: Guid(000c82d473a8aa44cbf2120d643339b6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Bison-ThinOutline.ttf using Guid(000c82d473a8aa44cbf2120d643339b6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '392b6fd55600dab661343833ec86bc24') in 0.034843 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURW-ExtBol.ttf
+  artifactKey: Guid(8d288faa35b0c994cb78bb40eb00ce2b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURW-ExtBol.ttf using Guid(8d288faa35b0c994cb78bb40eb00ce2b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '38e6c86ee1d182aba49ddd1766fb8e7e') in 0.055930 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURWExtWid-UltBol.ttf
+  artifactKey: Guid(e248085570564344f851c2b8d7774920) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURWExtWid-UltBol.ttf using Guid(e248085570564344f851c2b8d7774920) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a3b3ec574064757edbd4ac50ace4b833') in 0.053427 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURWWid-UltBolObl.ttf
+  artifactKey: Guid(a52b1a177cc306f49855ef869b777514) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURWWid-UltBolObl.ttf using Guid(a52b1a177cc306f49855ef869b777514) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f4204b69a42369be85d1b2f462f74936') in 0.015603 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURW-RegObl.ttf
+  artifactKey: Guid(0c7d89d92843312489689208aa79a6db) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURW-RegObl.ttf using Guid(0c7d89d92843312489689208aa79a6db) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '61decd5970dbf0099905550438a3a615') in 0.041120 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURWNar-BolObl.ttf
+  artifactKey: Guid(0785111314687a14ebab2fc18fe4e387) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURWNar-BolObl.ttf using Guid(0785111314687a14ebab2fc18fe4e387) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0ea66ef84a6c572af5949f367f4ac265') in 0.064343 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Fonts/BodoniURWExtNar-Reg.ttf
+  artifactKey: Guid(c56ffa99250f5f546853ec260fd32245) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BodoniURWExtNar-Reg.ttf using Guid(c56ffa99250f5f546853ec260fd32245) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '18ef945b999a41877c6d50092863f55f') in 0.030536 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TextMesh Pro/Fonts/BodoniURWExtWid-ExtBolObl.ttf
+  artifactKey: Guid(eba2ed23677e41046a719e307e1a9af9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BodoniURWExtWid-ExtBolObl.ttf using Guid(eba2ed23677e41046a719e307e1a9af9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd41b0e3043342193b54b43c102dc646d') in 0.023657 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TextMesh Pro/Fonts/BodoniURWNar-Med.ttf
+  artifactKey: Guid(9af86f2ebfcb9444499409988864bc75) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BodoniURWNar-Med.ttf using Guid(9af86f2ebfcb9444499409988864bc75) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0c81cbe611eef5533c7a30f0563c9919') in 0.041290 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Fonts/BodoniURWExtWid-MedObl.ttf
+  artifactKey: Guid(fbc64586eb7d3db4cbad40dc98e02e9f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BodoniURWExtWid-MedObl.ttf using Guid(fbc64586eb7d3db4cbad40dc98e02e9f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2f2dec605fc4dffc43b74974ed22dc7c') in 0.019272 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Fonts/BodoniURWExtNar-ExtBol.ttf
+  artifactKey: Guid(3c4993a3847efd24ebf2a696aa59e7ec) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BodoniURWExtNar-ExtBol.ttf using Guid(3c4993a3847efd24ebf2a696aa59e7ec) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd2fde2176bab8cd81afea2b9bf917e8c') in 0.058323 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Fonts/BodoniURWWid-BolObl.ttf
+  artifactKey: Guid(9193ec872227bdb46bb2bde497d8f5ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BodoniURWWid-BolObl.ttf using Guid(9193ec872227bdb46bb2bde497d8f5ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '57dac896c95d84ac9c8e5658ca12addc') in 0.062688 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Fonts/BodoniURWNar-ExtBol.ttf
+  artifactKey: Guid(106375e1f62109b4d9435d81f147a6d2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BodoniURWNar-ExtBol.ttf using Guid(106375e1f62109b4d9435d81f147a6d2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e6c7ea07f953d266fa4fdce4bad930f0') in 0.040813 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Fonts/BodoniURWNar-Bol.ttf
+  artifactKey: Guid(9f3bf08ed07748b47885492e3e664e93) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BodoniURWNar-Bol.ttf using Guid(9f3bf08ed07748b47885492e3e664e93) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ecf5e39f0493dc97723a00d47eef3dd3') in 0.022633 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURWExtNar-RegObl.ttf
+  artifactKey: Guid(54fd25f3d78cc864780345cd78fd23ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURWExtNar-RegObl.ttf using Guid(54fd25f3d78cc864780345cd78fd23ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1415929bd20ee24f653d4f7137e409d6') in 0.010852 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TextMesh Pro/Fonts/BodoniURWWid-Med.ttf
+  artifactKey: Guid(22186cedb467ed049bfc847e65b51729) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BodoniURWWid-Med.ttf using Guid(22186cedb467ed049bfc847e65b51729) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ec9b3bdfb74d7d194f403af871e4d3e7') in 0.034182 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURWExtWid-Med.ttf
+  artifactKey: Guid(457dc5e8aea02534785a2608870e9529) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURWExtWid-Med.ttf using Guid(457dc5e8aea02534785a2608870e9529) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ff9931566392c2263c3e4f01abd01426') in 0.032585 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Materials/Obstacles.mat
+  artifactKey: Guid(c8ec941b9c342e442aab95137a147039) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/Obstacles.mat using Guid(c8ec941b9c342e442aab95137a147039) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8a278f515eda2e8291e15732f932a376') in 0.019021 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TextMesh Pro/Fonts/Bison-ThinOutlineItallic.ttf
+  artifactKey: Guid(8a981576b828e1745915324d6cb7364f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Bison-ThinOutlineItallic.ttf using Guid(8a981576b828e1745915324d6cb7364f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6ca4d03e21ae68341e9ae3a88763d690') in 0.032124 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Backgrounds/background.jpg
+  artifactKey: Guid(393a72c76afbbbe46a953258d47e7b97) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Backgrounds/background.jpg using Guid(393a72c76afbbbe46a953258d47e7b97) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '661d379ff0be5cbbf784a2546ac3c0f1') in 0.161599 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/TextMesh Pro/Fonts/Cinematografica-ExtraBold.ttf
+  artifactKey: Guid(46e75fdf9f228434bb94793b9164e6fb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Cinematografica-ExtraBold.ttf using Guid(46e75fdf9f228434bb94793b9164e6fb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bbf01f2459591b4f2d8b3f2e75b6afa3') in 0.112524 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TextMesh Pro/Fonts/ClarendonURWExtNar-Med.ttf
+  artifactKey: Guid(087205b9c1dc71547b3f9bde43785e1c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/ClarendonURWExtNar-Med.ttf using Guid(087205b9c1dc71547b3f9bde43785e1c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'da619004ac75ef3cba1212f33889cc5c') in 0.061491 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Fonts/ClarendonURW-Bol.ttf
+  artifactKey: Guid(49e28ba311718e34bb361a5d3b01a027) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/ClarendonURW-Bol.ttf using Guid(49e28ba311718e34bb361a5d3b01a027) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7ad64efbc1630a0e9a5c69a1552a378c') in 0.162962 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/TextMesh Pro/Fonts/ClarendonURW-ExtBolObl.ttf
+  artifactKey: Guid(e8fe8cc80a5a1604bb83660860577d0d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/ClarendonURW-ExtBolObl.ttf using Guid(e8fe8cc80a5a1604bb83660860577d0d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '05acab73ad48a691a0c8818abc87b6db') in 0.036683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Fonts/ClarendonURW-BolObl.ttf
+  artifactKey: Guid(2500b6ee55e5bcf48bd933cb806290a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/ClarendonURW-BolObl.ttf using Guid(2500b6ee55e5bcf48bd933cb806290a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6fec324e3fafc42c91c290b6dd32f0e6') in 0.039296 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TextMesh Pro/Fonts/ClarendonURWNar-Med.ttf
+  artifactKey: Guid(5fc91f7241fcc214ea01491f9f8a89ca) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/ClarendonURWNar-Med.ttf using Guid(5fc91f7241fcc214ea01491f9f8a89ca) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'eb42dedfdd978f2f82be9eb2735b73ac') in 0.051771 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Scripts/PlayerMovement.cs
+  artifactKey: Guid(dd31454b8f915de43987bce20c0245a6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/PlayerMovement.cs using Guid(dd31454b8f915de43987bce20c0245a6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '35a1a3ef91887398d3dbd94b85649288') in 0.004948 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Materials/Gold.asset
+  artifactKey: Guid(6f52e1ee7dcdef14e81432d8d5c85994) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/Gold.asset using Guid(6f52e1ee7dcdef14e81432d8d5c85994) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '36396680185e0873eaf5ea5aba67a690') in 0.016241 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TextMesh Pro/Fonts/ClarendonURWExtWid-LigObl.ttf
+  artifactKey: Guid(ea2180dbef0b496458e82f52496a49a7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/ClarendonURWExtWid-LigObl.ttf using Guid(ea2180dbef0b496458e82f52496a49a7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e07d59a655acc7949db966a5814b753a') in 0.047734 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Fonts/BodoniURWExtWid-LigObl.ttf
+  artifactKey: Guid(6a7b9ee1df59728419556d0d881c065d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BodoniURWExtWid-LigObl.ttf using Guid(6a7b9ee1df59728419556d0d881c065d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9e02899e2111183dd28527e98d1db303') in 0.033187 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURWNar-RegObl.ttf
+  artifactKey: Guid(c63225b8bbc67844099b43ac73c168e4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURWNar-RegObl.ttf using Guid(c63225b8bbc67844099b43ac73c168e4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '13db5f1321c654daaaf2d24142d8e7b4') in 0.034830 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURWExtNar-Reg.ttf
+  artifactKey: Guid(17ffec20d094cf142b1c32e95dc46bd6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURWExtNar-Reg.ttf using Guid(17ffec20d094cf142b1c32e95dc46bd6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd2be0176ee6a51f1bf6f8c557a6805d9') in 0.044491 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURWNar-Reg.ttf
+  artifactKey: Guid(d517c76d1ecffe245b469aa5b13bc277) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURWNar-Reg.ttf using Guid(d517c76d1ecffe245b469aa5b13bc277) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f31ecffbf9cd3261e12359ae46f15140') in 0.050602 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Fonts/BodoniURWExtNar-RegObl.ttf
+  artifactKey: Guid(f31aacaaf93963e41943bff5baafd0a0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BodoniURWExtNar-RegObl.ttf using Guid(f31aacaaf93963e41943bff5baafd0a0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '76b90c6256e7e63d3d06c84c40daee9f') in 0.033273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURW-BolObl.ttf
+  artifactKey: Guid(c54e5961ae48ede4b964b48384f3d8dd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURW-BolObl.ttf using Guid(c54e5961ae48ede4b964b48384f3d8dd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a97887e1bee251a841ba806b500f651d') in 0.010272 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURWWid-RegObl.ttf
+  artifactKey: Guid(12cbe6483db0e0d47ae82394e45f2cb9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURWWid-RegObl.ttf using Guid(12cbe6483db0e0d47ae82394e45f2cb9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '35a0ef2bc2402da2ff195ca52437b296') in 0.043851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Fonts/BodoniURWWid-LigObl.ttf
+  artifactKey: Guid(cfd0cee78d9257c4397a6a1d275bd4d4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BodoniURWWid-LigObl.ttf using Guid(cfd0cee78d9257c4397a6a1d275bd4d4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '01f785ee6b02b0bca89180ebbefbabae') in 0.029178 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TextMesh Pro/Fonts/Bison-Light.ttf
+  artifactKey: Guid(fbcd6a97e393e514dbce5402075c0f93) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Bison-Light.ttf using Guid(fbcd6a97e393e514dbce5402075c0f93) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '95414d4661e80e637f7550d56f032524') in 0.046332 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(32119589c35cbd7478c4a54816eca4fa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/SampleScene.unity using Guid(32119589c35cbd7478c4a54816eca4fa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0e9d560a170f26c199e787280d0dc622') in 0.003833 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURWNar-Med.ttf
+  artifactKey: Guid(ba54ef2272808c041b9359f11d53dab6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURWNar-Med.ttf using Guid(ba54ef2272808c041b9359f11d53dab6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '76921d484f7295e3d0946d9df5773258') in 0.030566 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Fonts/ClarendonURWWid-LigObl.ttf
+  artifactKey: Guid(034bb2755535f1d4bae76df67c20647d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/ClarendonURWWid-LigObl.ttf using Guid(034bb2755535f1d4bae76df67c20647d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6c5678b5a483de0c79ff4f219680fb17') in 0.096810 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Fonts/FuturaCon-Boo.ttf
+  artifactKey: Guid(6a607feda1cfc6c48a63fa4830b1b150) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/FuturaCon-Boo.ttf using Guid(6a607feda1cfc6c48a63fa4830b1b150) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '382ab1dcedbf6a5f8e1ff364396b4bcc') in 0.143261 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Fonts/FuturaCon-BooObl.ttf
+  artifactKey: Guid(b26fb2effd1baa14490eebfc2c1c0a42) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/FuturaCon-BooObl.ttf using Guid(b26fb2effd1baa14490eebfc2c1c0a42) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '72240b54d7c509f780b9a3b387c089ff') in 0.077438 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/TextMesh Pro/Fonts/Futura-BooObl.ttf
+  artifactKey: Guid(c871e0d585b4f474d8935d501fb601b4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Futura-BooObl.ttf using Guid(c871e0d585b4f474d8935d501fb601b4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'db3d199a77a7e47372850258a929211f') in 0.056360 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Fonts/FranklinGothicURW-HeaIta.ttf
+  artifactKey: Guid(dc2622cf3ec2804408a6365487434960) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/FranklinGothicURW-HeaIta.ttf using Guid(dc2622cf3ec2804408a6365487434960) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1ece6ab90fd76f5d7c0eddaacd81a783') in 0.051914 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Fonts/Futura-ExtBolObl.ttf
+  artifactKey: Guid(ca7288ca93884c943b23b7ecdc774989) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Futura-ExtBolObl.ttf using Guid(ca7288ca93884c943b23b7ecdc774989) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6b74a50623ce194f31a4fa786274ef2d') in 0.099516 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/TextMesh Pro/Fonts/FuturaDCD-Lig.ttf
+  artifactKey: Guid(d34650fdcd749f04384a6dabe997ff7a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/FuturaDCD-Lig.ttf using Guid(d34650fdcd749f04384a6dabe997ff7a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3ad7285977bf2cc33c8f1420aa52032f') in 0.065821 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TextMesh Pro/Fonts/FuturaDisP.ttf
+  artifactKey: Guid(d94f07ed3b915b0409e4aa3afaab0cf4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/FuturaDisP.ttf using Guid(d94f07ed3b915b0409e4aa3afaab0cf4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9bebbbfbde46b062dd4806b0d1cb4d30') in 0.099044 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/TextMesh Pro/Fonts/FuturaSC-Dem.ttf
+  artifactKey: Guid(baf73dd90d0428f448f2efd237c75e3a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/FuturaSC-Dem.ttf using Guid(baf73dd90d0428f448f2efd237c75e3a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'faca4c841bf51028743c8fb34867a1a8') in 0.088588 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/TextMesh Pro/Fonts/FranklinGothicURW-DemIta.ttf
+  artifactKey: Guid(1fbbeafeaf799614eb0f75e7b2a28f46) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/FranklinGothicURW-DemIta.ttf using Guid(1fbbeafeaf799614eb0f75e7b2a28f46) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cc44522d0267b6d792dd65e6bef51352') in 0.054513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Fonts/FuturaOutP-ExtBolObl.ttf
+  artifactKey: Guid(22f1e644cd9e9cd42b724bfb761639c1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/FuturaOutP-ExtBolObl.ttf using Guid(22f1e644cd9e9cd42b724bfb761639c1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4b2da62ef9b21f0822583096a3e54bfd') in 0.098190 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Fonts/FuturaCon-Bol.ttf
+  artifactKey: Guid(cf4aeb3858a647e46bad3f0452378cad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/FuturaCon-Bol.ttf using Guid(cf4aeb3858a647e46bad3f0452378cad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '45743805c92231174debac803fef946a') in 0.038341 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/TextMesh Pro/Fonts/isidora-semibold.ttf
+  artifactKey: Guid(48c139d3728e291448931779744b92bb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/isidora-semibold.ttf using Guid(48c139d3728e291448931779744b92bb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cdffc6566e8b4a5b1ef486a7a2abffc5') in 0.068833 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TextMesh Pro/Fonts/isidora-light.ttf
+  artifactKey: Guid(fc71df2c6e782664da3d5a016a31a0b8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/isidora-light.ttf using Guid(fc71df2c6e782664da3d5a016a31a0b8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bc8783f5299fc65e20b451d909ce0118') in 0.097597 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Fonts/isidoraalt-black.ttf
+  artifactKey: Guid(9897245cfb9877846a745fd6c28899a1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/isidoraalt-black.ttf using Guid(9897245cfb9877846a745fd6c28899a1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b1e2c5aec09a5171fe907338946a8225') in 0.045849 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/TextMesh Pro/Fonts/isidoraalt-blackit.ttf
+  artifactKey: Guid(4510f27ab8f8679438ab7eb5737fd12b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/isidoraalt-blackit.ttf using Guid(4510f27ab8f8679438ab7eb5737fd12b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '84a64e2898f44779578db28172f1b0b9') in 0.034209 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Fonts/ClarendonURWNar-MedObl.ttf
+  artifactKey: Guid(f7af233fbe0cac847b27b6a3a19de0dc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/ClarendonURWNar-MedObl.ttf using Guid(f7af233fbe0cac847b27b6a3a19de0dc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3868b78d11284f5edcd92cdc771650c3') in 0.050978 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Fonts/FuturaCon-BolObl.ttf
+  artifactKey: Guid(6ea295a35566df1419c8fd4a3af4c038) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/FuturaCon-BolObl.ttf using Guid(6ea295a35566df1419c8fd4a3af4c038) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1210e1f47d73e149baaea391a3275c34') in 0.046349 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TextMesh Pro/Fonts/ClarendonURWExtWid-Reg.ttf
+  artifactKey: Guid(aad86334ce5b94b4db1c8e1fd767ebd6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/ClarendonURWExtWid-Reg.ttf using Guid(aad86334ce5b94b4db1c8e1fd767ebd6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '07f079eb2f776018de772e3e0744ac5c') in 0.072214 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TextMesh Pro/Fonts/Futura-LigObl.ttf
+  artifactKey: Guid(4514185e487d3034a83f748e199c03be) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Futura-LigObl.ttf using Guid(4514185e487d3034a83f748e199c03be) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b0d958435f0454e4bd6dee884dfbd10b') in 0.097952 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TextMesh Pro/Fonts/Karu-Bold.ttf
+  artifactKey: Guid(456653d5a93f8da4a8a89d8bfcf12e1c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Karu-Bold.ttf using Guid(456653d5a93f8da4a8a89d8bfcf12e1c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '762e86dbcbad3e257cb993d9262d37d4') in 0.090890 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Fonts/Karu-ExtraBold.ttf
+  artifactKey: Guid(417dcc2f02b72174f8d7850ffc47df0e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Karu-ExtraBold.ttf using Guid(417dcc2f02b72174f8d7850ffc47df0e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f827d3469e11f941e743be568d061a27') in 0.077011 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TextMesh Pro/Fonts/Karu-Italic.ttf
+  artifactKey: Guid(8d6c3120d0eb9614b8a6becb602826af) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Karu-Italic.ttf using Guid(8d6c3120d0eb9614b8a6becb602826af) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bb4691b59f8312523fa5652a8304a9b1') in 0.109689 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Fonts/isidoraalt-medium.ttf
+  artifactKey: Guid(80684ab0230294b409012769e6ae627f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/isidoraalt-medium.ttf using Guid(80684ab0230294b409012769e6ae627f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2a9a40709d06c1bcf3ce17238b2bf4ed') in 0.069514 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Fonts/Karu-Light.ttf
+  artifactKey: Guid(9bd067d918d55da4bbd4ec79daf3f712) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Karu-Light.ttf using Guid(9bd067d918d55da4bbd4ec79daf3f712) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd7ffd08abefca58f4eb012743267edcf') in 0.055306 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Fonts/isidoraalt-regularit.ttf
+  artifactKey: Guid(4a0776ed58b74ce48a9dcfd854521b1d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/isidoraalt-regularit.ttf using Guid(4a0776ed58b74ce48a9dcfd854521b1d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '172418d7da4c2d140b671db499e71653') in 0.009298 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Fonts/FranklinGothicURW-Lig.ttf
+  artifactKey: Guid(a70b13aefc35da8459c590a4ce7ab49d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/FranklinGothicURW-Lig.ttf using Guid(a70b13aefc35da8459c590a4ce7ab49d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '990ec240048e6f835c15800c2d6a0ad1') in 0.056460 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Fonts/FuturaDisD.ttf
+  artifactKey: Guid(b4dad094d1da4a84eb431f1a55679a55) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/FuturaDisD.ttf using Guid(b4dad094d1da4a84eb431f1a55679a55) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2c2671faa3a3b1e61f0676e2d399ee90') in 0.039456 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Fonts/murizabasic-extrabolditalic-webfont.ttf
+  artifactKey: Guid(072e2c8c2f5799542909ab20979840d9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/murizabasic-extrabolditalic-webfont.ttf using Guid(072e2c8c2f5799542909ab20979840d9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '02d70c47fd2b6b9262c410188f63dd0c') in 0.076173 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f9b39700d06209eb4db8a32356ba8568') in 0.008211 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Fonts/murizabasic-black-webfont.ttf
+  artifactKey: Guid(84f189fa2af26fa4787f1249927e2f9c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/murizabasic-black-webfont.ttf using Guid(84f189fa2af26fa4787f1249927e2f9c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2cc6928edaeb24640a05e16d391fda32') in 0.068302 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Fonts/murizabasic-extrabold-webfont.ttf
+  artifactKey: Guid(a2be303a8a787524399f20a3db232650) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/murizabasic-extrabold-webfont.ttf using Guid(a2be303a8a787524399f20a3db232650) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e70403337e78a13282569c4ab69cc2ac') in 0.096362 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TextMesh Pro/Fonts/murizabasic-thin-webfont.ttf
+  artifactKey: Guid(58f3936affc67e6408053d2d9a8c1267) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/murizabasic-thin-webfont.ttf using Guid(58f3936affc67e6408053d2d9a8c1267) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6eeffebabe0d07d0d57d5e24d55fece5') in 0.034082 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Fonts/FuturaOnlShaD-LigObl.ttf
+  artifactKey: Guid(af3e253434a6966488fa862c820795a7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/FuturaOnlShaD-LigObl.ttf using Guid(af3e253434a6966488fa862c820795a7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f8fdd90da74b3cdc518c0251665637bf') in 0.017246 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Fonts/FuturaCon-ExtBolObl.ttf
+  artifactKey: Guid(5d8b7cf76d1bf5644a0012f337075cf5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/FuturaCon-ExtBolObl.ttf using Guid(5d8b7cf76d1bf5644a0012f337075cf5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '934f22ba8e77a957475c4221f2d618cf') in 0.031844 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Fonts/isidora-boldit.ttf
+  artifactKey: Guid(77f792bf41bc97f409157fde5f21b121) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/isidora-boldit.ttf using Guid(77f792bf41bc97f409157fde5f21b121) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ddbb8fe3a1ac6a55e98d0a4b2ea838bb') in 0.021174 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Fonts/Karu-Black.ttf
+  artifactKey: Guid(45f640f67c8a8784c91e88a91e536d99) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Karu-Black.ttf using Guid(45f640f67c8a8784c91e88a91e536d99) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0663fea620f9cf0a10b1b8003516c2ed') in 0.044803 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Fonts/murizabasic-hairlineitalic-webfont.ttf
+  artifactKey: Guid(2a62f734be919774980ca4f26daced70) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/murizabasic-hairlineitalic-webfont.ttf using Guid(2a62f734be919774980ca4f26daced70) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6b0bdd2708ff8560e5a5c8fd20dae57d') in 0.046881 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Fonts/FuturaBlaD.ttf
+  artifactKey: Guid(8a042f69accab8d49a5686f1efcdd64f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/FuturaBlaD.ttf using Guid(8a042f69accab8d49a5686f1efcdd64f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '33cb7761e7b162db2b8b866b6cdec29c') in 0.063424 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TextMesh Pro/Fonts/TextaAlt-Book.ttf
+  artifactKey: Guid(ec7d27ac55e610e4f86266652e7233e0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/TextaAlt-Book.ttf using Guid(ec7d27ac55e610e4f86266652e7233e0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e850afe54ed27d55a614ce8db11c09da') in 0.080539 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/TextMesh Pro/Fonts/Texta-Medium.ttf
+  artifactKey: Guid(5b830a4e4610ca34c959f10940754e9f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Texta-Medium.ttf using Guid(5b830a4e4610ca34c959f10940754e9f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '05327bb54b06040e37dd4173fefd6415') in 0.046305 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/TextMesh Pro/Fonts/Texta-BoldIt.ttf
+  artifactKey: Guid(7dd443df6b25afe4dbaa2299c802d15a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Texta-BoldIt.ttf using Guid(7dd443df6b25afe4dbaa2299c802d15a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '764ddbca0f274860143ce839923a4e1f') in 0.073537 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Fonts/Texta-Bold.ttf
+  artifactKey: Guid(17be474005247b44591612c2e297a387) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Texta-Bold.ttf using Guid(17be474005247b44591612c2e297a387) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6a45283a7c8d626bc2fc327c3fd326b2') in 0.041489 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TextMesh Pro/Fonts/TextaAlt-Bold.ttf
+  artifactKey: Guid(4a763873a6cccdd47a7f67b0398b7008) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/TextaAlt-Bold.ttf using Guid(4a763873a6cccdd47a7f67b0398b7008) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2faeca1d6f23a2c0652ecffcb8ca692b') in 0.027209 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Fonts/Texta-Black.ttf
+  artifactKey: Guid(8af8ea5aca3448346ab67726ad02b985) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Texta-Black.ttf using Guid(8af8ea5aca3448346ab67726ad02b985) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0ab968798f170a0ad12825eed036b9aa') in 0.022959 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Fonts/Texta-Thin.ttf
+  artifactKey: Guid(fb81ce44c6739d849a95d4a345bd8756) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Texta-Thin.ttf using Guid(fb81ce44c6739d849a95d4a345bd8756) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f5d8508b466e49eba8fb34ceb8a5c2b1') in 0.071546 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/TextMesh Pro/Fonts/Texta-ThintIt.ttf
+  artifactKey: Guid(d10c8ecd2677e2b488ae910868347393) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Texta-ThintIt.ttf using Guid(d10c8ecd2677e2b488ae910868347393) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6b754b0ad4b669861cf94b64c56b7c0b') in 0.052579 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TextMesh Pro/Fonts/FuturaCon-LigObl.ttf
+  artifactKey: Guid(1db90c969bb26fc4cbe0b84fc2f5a682) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/FuturaCon-LigObl.ttf using Guid(1db90c969bb26fc4cbe0b84fc2f5a682) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fad8336fb9f87f72631aef398645abfa') in 0.021411 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURW-MedObl.ttf
+  artifactKey: Guid(75780dacd64ba054a8ca53ffe53a1460) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURW-MedObl.ttf using Guid(75780dacd64ba054a8ca53ffe53a1460) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0996ac545e54f30e6f480c0634de48fa') in 0.028413 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/TextMesh Pro/Fonts/TT-Corals Thin Italic.ttf
+  artifactKey: Guid(cc972e8560a224d45900e85165c51436) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/TT-Corals Thin Italic.ttf using Guid(cc972e8560a224d45900e85165c51436) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '96116f0d4ac815c27fae55f6ecc823b6') in 0.094157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Fonts/TT-Corals Black.ttf
+  artifactKey: Guid(d8a0d42523b9f8d4195da15186bbed02) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/TT-Corals Black.ttf using Guid(d8a0d42523b9f8d4195da15186bbed02) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6f2ee16696cce525943b74d4d0f73732') in 0.121080 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TextMesh Pro/Fonts/TT-Corals Bold Italic.ttf
+  artifactKey: Guid(b930591d54e1ba34a9c457386e9463b4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/TT-Corals Bold Italic.ttf using Guid(b930591d54e1ba34a9c457386e9463b4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '39fbb74e1d8f64e52f83bb749848e563') in 0.081714 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/TextMesh Pro/Fonts/Trenda-Semibold.ttf
+  artifactKey: Guid(1454df810711d4540bee8fa1bc07684d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Trenda-Semibold.ttf using Guid(1454df810711d4540bee8fa1bc07684d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '38c07392d4f2e8b049c9e975f6ac18c3') in 0.065628 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Fonts/TT-Corals Bold.ttf
+  artifactKey: Guid(9eac88f6df3cdcf4789759fd4bd97eb8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/TT-Corals Bold.ttf using Guid(9eac88f6df3cdcf4789759fd4bd97eb8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ad73acaa7479dfd0312810721d831f50') in 0.053433 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TextMesh Pro/Fonts/Trenda-BlackIt.ttf
+  artifactKey: Guid(90886f58edf56454bbdc96fa8612e48b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Trenda-BlackIt.ttf using Guid(90886f58edf56454bbdc96fa8612e48b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9c3141f4de5fc125f3161af0dc03f5f2') in 0.011136 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Fonts/Trenda-HeavyIt.ttf
+  artifactKey: Guid(3f2c90a242f34484f9b2a0c300fb3cc1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Trenda-HeavyIt.ttf using Guid(3f2c90a242f34484f9b2a0c300fb3cc1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a7d59aea1ca214003f9f3a9e1c50a921') in 0.016639 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Fonts/Trenda-LightIt.ttf
+  artifactKey: Guid(9c260d50b3923744383906081d6be17c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Trenda-LightIt.ttf using Guid(9c260d50b3923744383906081d6be17c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '165dd657adf97fc37de426160cc95d98') in 0.016401 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURWWid-UltBol.ttf
+  artifactKey: Guid(6f4c9b67cea9f3a43a29d0678a8ced18) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURWWid-UltBol.ttf using Guid(6f4c9b67cea9f3a43a29d0678a8ced18) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '88e812e95720d5575e55690c1e8bd6e8') in 0.027683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Fonts/URWDIN-DemiItalic.ttf
+  artifactKey: Guid(65a0a5149fe91e541b444dabb4bb3352) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/URWDIN-DemiItalic.ttf using Guid(65a0a5149fe91e541b444dabb4bb3352) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c38f18ba13670ee71696467dcf10105b') in 0.042372 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Fonts/TT-Corals Thin.ttf
+  artifactKey: Guid(b4d2921bae63e5e4289d0227a07216f4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/TT-Corals Thin.ttf using Guid(b4d2921bae63e5e4289d0227a07216f4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ebcee3d73d0db3cf15cc738e51f6aa55') in 0.008268 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TextMesh Pro/Fonts/URWDINCond-BlackItalic.ttf
+  artifactKey: Guid(575077fac0a14f840a84d8492227a2af) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/URWDINCond-BlackItalic.ttf using Guid(575077fac0a14f840a84d8492227a2af) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '44fdaecc0031b33a2d2d9cc62f705bdd') in 0.102360 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TextMesh Pro/Fonts/URWDIN-BoldItalic.ttf
+  artifactKey: Guid(6b3edf8634865a44f8d9bc9d36ac2470) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/URWDIN-BoldItalic.ttf using Guid(6b3edf8634865a44f8d9bc9d36ac2470) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ef2144c13869a48a3f556d5e7b71d35e') in 0.070650 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Fonts/URWDIN-ThinItalic.ttf
+  artifactKey: Guid(005d4f4d9b31df84283cad160b46219c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/URWDIN-ThinItalic.ttf using Guid(005d4f4d9b31df84283cad160b46219c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '10a21d2895a04a64eab2a2a2f81b73b6') in 0.114617 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Fonts/URWDINCond-DemiItalic.ttf
+  artifactKey: Guid(35c0d8ab508e3cb4e9eb75938544ebf4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/URWDINCond-DemiItalic.ttf using Guid(35c0d8ab508e3cb4e9eb75938544ebf4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '41a7ed6827e6686480479e78fc55c809') in 0.070673 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Fonts/URWDIN-XLightItalic.ttf
+  artifactKey: Guid(1e7d59f8c58dff44fa23f441dd9a6954) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/URWDIN-XLightItalic.ttf using Guid(1e7d59f8c58dff44fa23f441dd9a6954) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '34b5b09f433544ec62d8649f91ae575a') in 0.106900 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Fonts/URWDINCond-Medium.ttf
+  artifactKey: Guid(3481dfcf8af8e1c4190ca8e3918b8f90) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/URWDINCond-Medium.ttf using Guid(3481dfcf8af8e1c4190ca8e3918b8f90) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fa3cb07e71f2b81c468109ffc46b5313') in 0.060961 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Fonts/URWDINCond-ThinItalic.ttf
+  artifactKey: Guid(1965bd8f71ec9fe4db34ecc6001869d2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/URWDINCond-ThinItalic.ttf using Guid(1965bd8f71ec9fe4db34ecc6001869d2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0d397460fc9e6388b5fff9637ad48caf') in 0.079355 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TextMesh Pro/Fonts/URWDINCond-Regular.ttf
+  artifactKey: Guid(31aef9e84bba5ea4b9ec19013a5f8de5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/URWDINCond-Regular.ttf using Guid(31aef9e84bba5ea4b9ec19013a5f8de5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f936a6cdbc9682a1559b1adc7225ded7') in 0.043331 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/TextMesh Pro/Fonts/URWDINSemiCond-Light.ttf
+  artifactKey: Guid(fba54be0e81d702498f6e7def619f2c7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/URWDINSemiCond-Light.ttf using Guid(fba54be0e81d702498f6e7def619f2c7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '298b2e613510eedf6c67d510539ad8d9') in 0.055801 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TextMesh Pro/Fonts/URWDINCond-Thin.ttf
+  artifactKey: Guid(2f706f89ad78f214c8b8d3e023d17745) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/URWDINCond-Thin.ttf using Guid(2f706f89ad78f214c8b8d3e023d17745) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0d8382e33ca21705f8c244055bdf34d4') in 0.012503 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TextMesh Pro/Fonts/URWDIN-Thin.ttf
+  artifactKey: Guid(5f1ae7dc6021e4d40a8facda3624f006) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/URWDIN-Thin.ttf using Guid(5f1ae7dc6021e4d40a8facda3624f006) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '60ca05565d55c0481818d0d0ef638ce1') in 0.065833 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Fonts/murizabasic-lightitalic-webfont.ttf
+  artifactKey: Guid(aad43c9a09fd6e441863ea99611fd0b3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/murizabasic-lightitalic-webfont.ttf using Guid(aad43c9a09fd6e441863ea99611fd0b3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c62b2fb1f506a4a1caf67c96423925c9') in 0.031583 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURWExtWid-MedObl.ttf
+  artifactKey: Guid(9da95de3db04fdf428f33c5f78e30d0b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURWExtWid-MedObl.ttf using Guid(9da95de3db04fdf428f33c5f78e30d0b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a3a32fd7a341f42d0fdf08f13c443e70') in 0.021696 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURWNar-Bol.ttf
+  artifactKey: Guid(3184e3c98d1b7b542b2f56797b762b88) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURWNar-Bol.ttf using Guid(3184e3c98d1b7b542b2f56797b762b88) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '16da5381dc3ccd6ce725c7b722b0f336') in 0.036240 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TextMesh Pro/Fonts/FranklinGothicURW-Boo.ttf
+  artifactKey: Guid(e9a9178f0a26a2c4f8665b08db85d351) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/FranklinGothicURW-Boo.ttf using Guid(e9a9178f0a26a2c4f8665b08db85d351) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b2db117d8137de5f90e34887cf9964a3') in 0.011337 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/TextMesh Pro/Fonts/Texta-Light.ttf
+  artifactKey: Guid(7266118a27c17e3498d75a7f416981ff) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Texta-Light.ttf using Guid(7266118a27c17e3498d75a7f416981ff) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bdfd7b39c0a7d1b6199cade18db4ac0f') in 0.024253 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Fonts/URWDINSemiCond-Medium.ttf
+  artifactKey: Guid(2ed1b34ecac3a414882e9b41ffa2ad8b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/URWDINSemiCond-Medium.ttf using Guid(2ed1b34ecac3a414882e9b41ffa2ad8b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a0ba067671ef011376707874590981fd') in 0.066476 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader
+  artifactKey: Guid(48bb5f55d8670e349b6e614913f9d910) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader using Guid(48bb5f55d8670e349b6e614913f9d910) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '115db208beeb9343990fc3687ae2f35c') in 0.011558 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Fonts/URWDINSemiCond-Regular.ttf
+  artifactKey: Guid(a1f2833021c679f4fb72db6c4145ada0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/URWDINSemiCond-Regular.ttf using Guid(a1f2833021c679f4fb72db6c4145ada0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd2fef5910c4e87cb5bbb9814b73fb31b') in 0.054953 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt
+  artifactKey: Guid(381dcb09d5029d14897e55f98031fca5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt using Guid(381dcb09d5029d14897e55f98031fca5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3a768171657eae9ca48011daf9a5da19') in 0.021443 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader
+  artifactKey: Guid(bc1ede39bf3643ee8e493720e4259791) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader using Guid(bc1ede39bf3643ee8e493720e4259791) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '101752cd2d9046b646c4fde760f2e283') in 0.006291 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc
+  artifactKey: Guid(d930090c0cd643c7b55f19a38538c162) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc using Guid(d930090c0cd643c7b55f19a38538c162) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b70b8652f1da3e50e630d3faadd69448') in 0.051123 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader
+  artifactKey: Guid(1e3b057af24249748ff873be7fafee47) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader using Guid(1e3b057af24249748ff873be7fafee47) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'afa206c254cf33a9e160516933ba2afb') in 0.005935 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader
+  artifactKey: Guid(f7ada0af4f174f0694ca6a487b8f543d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader using Guid(f7ada0af4f174f0694ca6a487b8f543d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7c8efe478f85a9bb45283671f2977ab4') in 0.007637 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc
+  artifactKey: Guid(3997e2241185407d80309a82f9148466) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc using Guid(3997e2241185407d80309a82f9148466) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1db97a3516d2c4930e57583a7bff87b4') in 0.018684 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc
+  artifactKey: Guid(c334973cef89a9840b0b0c507e0377ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc using Guid(c334973cef89a9840b0b0c507e0377ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5d0657fbb603c81e5f8f1858c747f838') in 0.050173 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt
+  artifactKey: Guid(fade42e8bc714b018fac513c043d323b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt using Guid(fade42e8bc714b018fac513c043d323b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '844b70566e28d752a1e627a4532c8890') in 0.002630 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/TextMesh Pro/Fonts/isidora-medium.ttf
+  artifactKey: Guid(380fabe9ecd201e41ab534bc51c1ad6d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/isidora-medium.ttf using Guid(380fabe9ecd201e41ab534bc51c1ad6d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '217c022d6a7e61c10f25f2dfa1d19063') in 0.138671 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/TextMesh Pro/Fonts/ClarendonURWWid-Bol.ttf
+  artifactKey: Guid(3fc9f964ae8c4aa4da8f25b76d8ced32) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/ClarendonURWWid-Bol.ttf using Guid(3fc9f964ae8c4aa4da8f25b76d8ced32) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ac9e4aec6dc59583a02514b8902f2540') in 0.022148 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/TextMesh Pro/Fonts/ClarendonURW-LigObl.ttf
+  artifactKey: Guid(2f12fc54aefe70b468d25e92342d949c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/ClarendonURW-LigObl.ttf using Guid(2f12fc54aefe70b468d25e92342d949c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9cdf634a80a84ab7cdae464ba223ce70') in 0.008451 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURW-UltBol.ttf
+  artifactKey: Guid(401c5faa34f459f48a38ec12474d4031) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURW-UltBol.ttf using Guid(401c5faa34f459f48a38ec12474d4031) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3078514c33b12faa6fb7651fb58a06f7') in 0.009716 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Fonts/cerabasic-black-webfont.ttf
+  artifactKey: Guid(7a785d4d08477924fa5e712f70565f50) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/cerabasic-black-webfont.ttf using Guid(7a785d4d08477924fa5e712f70565f50) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '24524bd2e3f96f6c557540caa4d1bceb') in 0.030040 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Fonts/ClarendonURWExtNar-LigObl.ttf
+  artifactKey: Guid(7c1f43e616437e24ab26e082bf8b5283) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/ClarendonURWExtNar-LigObl.ttf using Guid(7c1f43e616437e24ab26e082bf8b5283) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f60a8d29f00ec2e0e61822f05d58380d') in 0.025061 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6f97c2d38efac382546f0f74b22e38b2') in 0.039940 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7c39289a9bd8304c7534600f190dc82f') in 0.050945 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURWExtWid-RegObl.ttf
+  artifactKey: Guid(bf35475359e58f34fb7e0d0688d34ea4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURWExtWid-RegObl.ttf using Guid(bf35475359e58f34fb7e0d0688d34ea4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '35f0c07344b81f86c0e312cdc13644d1') in 0.156877 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Fonts/BodoniURWNar-Lig.ttf
+  artifactKey: Guid(60a348f28579d4f4f849794bbc091672) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BodoniURWNar-Lig.ttf using Guid(60a348f28579d4f4f849794bbc091672) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '91ce263d42c88f8277a621fbdd8b758c') in 0.088386 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Fonts/FranklinGothicURWCon-Med.ttf
+  artifactKey: Guid(3506fcd419ca35e4585049ea6ba815b1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/FranklinGothicURWCon-Med.ttf using Guid(3506fcd419ca35e4585049ea6ba815b1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b0f8bc03a6ace4c841e1688d9a7a4509') in 0.081593 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Fonts/URWDINSemiCond-LightItalic.ttf
+  artifactKey: Guid(ffafe83113e2cc14c9dd2536885c8fa0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/URWDINSemiCond-LightItalic.ttf using Guid(ffafe83113e2cc14c9dd2536885c8fa0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd3e931aa9cbb7d117b1f787dfeee055b') in 0.045766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Scripts/PlayerCam.cs
+  artifactKey: Guid(df18a31d7a1d4fa4bb35d6fd2595068b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/PlayerCam.cs using Guid(df18a31d7a1d4fa4bb35d6fd2595068b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'db80169cb480b4c8b3faf39ca739cdc9') in 0.003427 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/TextMesh Pro/Fonts/TT-Corals Light Italic.ttf
+  artifactKey: Guid(bde0e904ced04304faa229dd287b7b57) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/TT-Corals Light Italic.ttf using Guid(bde0e904ced04304faa229dd287b7b57) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'de5b99e4877289c5dc4547318b068430') in 0.012888 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURW-ExtBolObl.ttf
+  artifactKey: Guid(46fe6c6a8a0b381498868bb7a5b8816a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURW-ExtBolObl.ttf using Guid(46fe6c6a8a0b381498868bb7a5b8816a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2370d467b1415555d069d55e72cc2fda') in 0.035418 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TextMesh Pro/Fonts/BaskervilleURWExtNar-UltBolObl.ttf
+  artifactKey: Guid(bc55f687b03112d4bb55ccd027c534a3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BaskervilleURWExtNar-UltBolObl.ttf using Guid(bc55f687b03112d4bb55ccd027c534a3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2c2a81b568152993c7b06f6ba2fab693') in 0.019930 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Fonts/Basilia-Bol.ttf
+  artifactKey: Guid(41c62a7e26dca454c903eccb29ae2d60) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Basilia-Bol.ttf using Guid(41c62a7e26dca454c903eccb29ae2d60) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6ca2a5a992d958d2427d4ecc6260e3c2') in 0.077418 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TextMesh Pro/Fonts/TextaAlt-Thin.ttf
+  artifactKey: Guid(a6277d11d70026c468fac2a2b2259e81) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/TextaAlt-Thin.ttf using Guid(a6277d11d70026c468fac2a2b2259e81) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8fa8275471faad54fb3c8699a7904f33') in 0.021555 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Fonts/Texta-It.ttf
+  artifactKey: Guid(5f2869a7e2b110142ab3f7402d9f6777) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/Texta-It.ttf using Guid(5f2869a7e2b110142ab3f7402d9f6777) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '05762b507cdf9578420352431c7590ed') in 0.029297 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Fonts/ClarendonURWNar-Lig.ttf
+  artifactKey: Guid(d83e269905c458d4eb6647df419bbc8c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/ClarendonURWNar-Lig.ttf using Guid(d83e269905c458d4eb6647df419bbc8c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7782a1a17091534bc1d34f7ecee74c02') in 0.055806 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Fonts/TextaAlt-MediumIt.ttf
+  artifactKey: Guid(8345d3425763a6f48b5b3d13167ca097) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/TextaAlt-MediumIt.ttf using Guid(8345d3425763a6f48b5b3d13167ca097) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'dd40ffc08adaba6ee7470a3358f5a935') in 0.041684 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/TextMesh Pro/Fonts/URWDINSemiCond-Demi.ttf
+  artifactKey: Guid(7de8bf6828f06fb4ea74a4bf65625e7e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/URWDINSemiCond-Demi.ttf using Guid(7de8bf6828f06fb4ea74a4bf65625e7e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'aaa49c60c3f955e1efe7294b87e9b66f') in 0.044812 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Fonts/murizabasic-regularitalic-webfont.ttf
+  artifactKey: Guid(187534895dff0bc409707ecfccef4fb2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/murizabasic-regularitalic-webfont.ttf using Guid(187534895dff0bc409707ecfccef4fb2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f3b826e1edf6796c1bf55f999ee801e4') in 0.019600 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/TextMesh Pro/Fonts/BodoniURWExtNar-Med.ttf
+  artifactKey: Guid(eee6447df16707443bce1dc73df2dae2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/BodoniURWExtNar-Med.ttf using Guid(eee6447df16707443bce1dc73df2dae2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0224563652063d8fb7c13f29bd1d7e82') in 0.051262 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TextMesh Pro/Fonts/isidora-bold.ttf
+  artifactKey: Guid(5c022a496087ba94b9dcf0672b611173) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/isidora-bold.ttf using Guid(5c022a496087ba94b9dcf0672b611173) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '835d41e26d9b2d2a3c2fbee6aa7826e9') in 0.025518 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TextMesh Pro/Fonts/URWDINSemiCond-ThinItalic.ttf
+  artifactKey: Guid(1b4aa45704699c14f9e4b7397ff056a0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/URWDINSemiCond-ThinItalic.ttf using Guid(1b4aa45704699c14f9e4b7397ff056a0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e28cb1433b0249123944cdc0aa8e1028') in 0.099651 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
