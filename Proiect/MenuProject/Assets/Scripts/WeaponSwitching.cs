@@ -29,6 +29,26 @@ public class WeaponSwitching : MonoBehaviour
             }
             weaponChanged = true;
         }
+        if (Input.GetKey(KeyCode.Alpha1))
+        {
+            selectedWeapon = weaponsEnum.PISTOL;
+            weaponChanged=true;
+        }
+        if (Input.GetKey(KeyCode.Alpha2))
+        {
+            selectedWeapon = weaponsEnum.AK47;
+            weaponChanged = true;
+        }
+        if (Input.GetKey(KeyCode.Alpha3))
+        {
+            selectedWeapon = weaponsEnum.SHOTGUN;
+            weaponChanged = true;
+        }
+        if (Input.GetKey(KeyCode.Alpha4))
+        {
+            selectedWeapon = weaponsEnum.SNIPER;
+            weaponChanged = true;
+        }
         if (weaponChanged) {
             SelectWeapon();
         }
