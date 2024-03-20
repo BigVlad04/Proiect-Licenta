@@ -667,15 +667,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterController: {fileID: 443948838}
   PlayerBody: {fileID: 628104617}
-  movementSpeed: 15
-  gravity: -5
+  movementSpeed: 10
+  gravity: -20
   groundChecker: {fileID: 1079735591}
   groundCheckRadius: 0.4
   Ground:
     serializedVersion: 2
     m_Bits: 8
   jumpKey: 32
-  jumpHeight: 3
+  jumpHeight: 2
   jumpCooldown: 0
 --- !u!4 &556658031 stripped
 Transform:
@@ -1269,6 +1269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5297651ec70c969489a490a60f1d493f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedWeapon: 0
 --- !u!1 &1604227023
 GameObject:
   m_ObjectHideFlags: 0
