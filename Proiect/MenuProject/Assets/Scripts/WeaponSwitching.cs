@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class WeaponSwitching : MonoBehaviour
 {
-    weaponsEnum selectedWeapon = weaponsEnum.PISTOL;
+    public weaponsEnum selectedWeapon = weaponsEnum.PISTOL;
     // Start is called before the first frame update
     void Start()
     {
@@ -12,7 +12,26 @@ public class WeaponSwitching : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        bool weaponChanged = false;
+        if (Input.GetAxis("Mouse ScrollWheel") > 0f) {
+            selectedWeapon++;
+            if (selectedWeapon > weaponsEnum.SNIPER) { 
+                selectedWeapon = weaponsEnum.PISTOL;
+            }
+            weaponChanged = true;
+        }
+        if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+        {
+            selectedWeapon--;
+            if (selectedWeapon < weaponsEnum.PISTOL)
+            {
+                selectedWeapon = weaponsEnum.SNIPER;
+            }
+            weaponChanged = true;
+        }
+        if (weaponChanged) {
+            SelectWeapon();
+        }
     }
 
     void SelectWeapon() {
