@@ -28,14 +28,15 @@ public class GunScript : MonoBehaviour
             return;
         }
 
+        if (currentAmmo <= 0)
+        {
+            StartCoroutine(ReloadWeapon());
+            return;
+        }
+
         if (Input.GetButton("Fire1") && Time.time >= nextFireTime)
         {
-            nextFireTime = Time.time + 1f/firerate;
-            if (currentAmmo <= 0)
-            {
-                StartCoroutine(ReloadWeapon());
-                return;
-            }
+            nextFireTime = Time.time + 1f/firerate;   
             Shoot();
         }
     }
