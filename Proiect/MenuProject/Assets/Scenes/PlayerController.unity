@@ -1283,7 +1283,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9cf6469c2d593ae43a9b8685835f2b06, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -1305,8 +1305,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdd424481e760f04a8fb4c9657d406ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponSmoothing: 8
-  swayMultiplier: 4
+  swayAmount: 0.06
+  maxSwayAmount: 0.06
+  smoothAmount: 6
 --- !u!1 &1604227023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1721,7 +1722,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &848820795554016560
 Transform:
   m_ObjectHideFlags: 0
@@ -1903,7 +1904,8 @@ MonoBehaviour:
   firerate: 15
   playerCam: {fileID: 1412095625}
   magazineSize: 5
-  reloadTime: 1
+  reloadTime: 3
+  animator: {fileID: 1595498090}
 --- !u!33 &4352805530720871061
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1930,6 +1932,7 @@ MonoBehaviour:
   playerCam: {fileID: 1412095625}
   magazineSize: 5
   reloadTime: 1
+  animator: {fileID: 1595498090}
 --- !u!23 &4548678741407224964
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1990,6 +1993,7 @@ MonoBehaviour:
   playerCam: {fileID: 1412095625}
   magazineSize: 5
   reloadTime: 1
+  animator: {fileID: 1595498090}
 --- !u!33 &4784072734968323666
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2091,7 +2095,8 @@ MonoBehaviour:
   firerate: 1
   playerCam: {fileID: 1412095625}
   magazineSize: 5
-  reloadTime: 1
+  reloadTime: 4
+  animator: {fileID: 1595498090}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

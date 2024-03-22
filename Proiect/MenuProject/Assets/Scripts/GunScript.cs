@@ -12,7 +12,7 @@ public class GunScript : MonoBehaviour
 
     public int magazineSize = 8;
     private int currentAmmo;
-    public float reloadTime = 1f;
+    public float reloadTime = 2f;
     private bool currentlyReloading = false;
 
     public Animator animator;
