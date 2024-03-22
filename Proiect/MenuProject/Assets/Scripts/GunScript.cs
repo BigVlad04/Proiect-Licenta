@@ -5,7 +5,7 @@ public class GunScript : MonoBehaviour
 {
     public float damage = 10f;
     public float range = 100f;
-    public float firerate = 15f;
+    public float firerate = 2f;
     private float nextFireTime =0f;
 
     public Camera playerCam;
@@ -14,6 +14,8 @@ public class GunScript : MonoBehaviour
     private int currentAmmo;
     public float reloadTime = 1f;
     private bool currentlyReloading = false;
+
+    public Animator animator;
 
     private void Start()
     {
@@ -28,9 +30,10 @@ public class GunScript : MonoBehaviour
             return;
         }
 
-        if (currentAmmo <= 0)
+        if (currentAmmo <= 0 || Input.GetKeyDown(KeyCode.R))
         {
             StartCoroutine(ReloadWeapon());
+            Debug.Log("Reloading....");
             return;
         }
 
@@ -41,10 +44,20 @@ public class GunScript : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        currentlyReloading = false ;
+        animator.SetBool("Reloading", false);
+    }
+
     IEnumerator ReloadWeapon()
     {
         currentlyReloading = true;
+        animator.SetBool("Reloading", true);
+
         yield return new WaitForSeconds(reloadTime);
+
+        animator.SetBool("Reloading", false);
         currentAmmo = magazineSize;
         currentlyReloading = false;
     }
