@@ -1161,8 +1161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df18a31d7a1d4fa4bb35d6fd2595068b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensX: 1000
-  sensY: 1000
+  sensX: 1300
+  sensY: 1300
   playerBody: {fileID: 628104617}
 --- !u!1001 &1469377238
 PrefabInstance:
@@ -1899,12 +1899,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018eb1882dfeee8448eba82e488b14eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  range: 100
-  firerate: 15
+  gunData: {fileID: 11400000, guid: 0884e27b52cc5df46b01fddc2660d650, type: 2}
   playerCam: {fileID: 1412095625}
-  magazineSize: 5
-  reloadTime: 3
   animator: {fileID: 1595498090}
 --- !u!33 &4352805530720871061
 MeshFilter:
@@ -1926,12 +1922,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018eb1882dfeee8448eba82e488b14eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  range: 100
-  firerate: 15
+  gunData: {fileID: 11400000, guid: 71222688987fe9847957e96830ef5fb8, type: 2}
   playerCam: {fileID: 1412095625}
-  magazineSize: 5
-  reloadTime: 1
   animator: {fileID: 1595498090}
 --- !u!23 &4548678741407224964
 MeshRenderer:
@@ -1987,12 +1979,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018eb1882dfeee8448eba82e488b14eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  range: 100
-  firerate: 15
+  gunData: {fileID: 11400000, guid: 59143700c7d970445a042a269bffddda, type: 2}
   playerCam: {fileID: 1412095625}
-  magazineSize: 5
-  reloadTime: 1
   animator: {fileID: 1595498090}
 --- !u!33 &4784072734968323666
 MeshFilter:
@@ -2090,12 +2078,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 018eb1882dfeee8448eba82e488b14eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  range: 100
-  firerate: 1
+  gunData: {fileID: 11400000, guid: 3e8dd753fb54e2c48ba22bb6d21a595d, type: 2}
   playerCam: {fileID: 1412095625}
-  magazineSize: 5
-  reloadTime: 4
   animator: {fileID: 1595498090}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
