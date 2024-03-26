@@ -17,10 +17,12 @@ public class GunScript : MonoBehaviour
     private bool currentlyReloading = false;*/
 
     public Animator animator;
+    public Animator gunAnimator;
     public GameObject muzzleEffect;
 
     private void Start()
     {
+        gunAnimator = GetComponent<Animator>();
         gunData.currentAmmo = gunData.magazineSize;
        // currentAmmo = magazineSize;
     }
@@ -70,6 +72,7 @@ public class GunScript : MonoBehaviour
         RaycastHit hit;
         gunData.currentAmmo--;
         muzzleEffect.GetComponent<ParticleSystem>().Play();
+        gunAnimator.SetTrigger("RECOIL");
         if (Physics.Raycast(playerCam.transform.position, playerCam.transform.forward, out hit, gunData.range))
         {
             Debug.Log(hit.transform.name + " " + gunData.damage);
