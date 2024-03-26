@@ -17,6 +17,7 @@ public class GunScript : MonoBehaviour
     private bool currentlyReloading = false;*/
 
     public Animator animator;
+    public GameObject muzzleEffect;
 
     private void Start()
     {
@@ -66,9 +67,9 @@ public class GunScript : MonoBehaviour
 
     void Shoot()
     {
-
         RaycastHit hit;
         gunData.currentAmmo--;
+        muzzleEffect.GetComponent<ParticleSystem>().Play();
         if (Physics.Raycast(playerCam.transform.position, playerCam.transform.forward, out hit, gunData.range))
         {
             Debug.Log(hit.transform.name + " " + gunData.damage);
