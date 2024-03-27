@@ -18,5 +18,5 @@ MonoBehaviour:
   magazineSize: 12
   currentAmmo: 12
   fireRate: 1
-  reloadTime: 1.5
+  reloadTime: 2
   reloading: 0

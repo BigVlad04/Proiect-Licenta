@@ -21302,7 +21302,7 @@ Transform:
   m_GameObject: {fileID: 9115421950742907725}
   serializedVersion: 2
   m_LocalRotation: {x: 0.031951018, y: 0.7996073, z: 0.0233931, w: 0.59921634}
-  m_LocalPosition: {x: 0.29512274, y: -0.15793896, z: 0.3591118}
+  m_LocalPosition: {x: 0.2951227, y: -0.157939, z: 0.3591118}
   m_LocalScale: {x: 127.7, y: 127.7, z: 127.7}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -21344,7 +21344,7 @@ MonoBehaviour:
   gunData: {fileID: 11400000, guid: 3e8dd753fb54e2c48ba22bb6d21a595d, type: 2}
   playerCam: {fileID: 1412095625}
   animator: {fileID: 1595498090}
-  gunAnimator: {fileID: 0}
+  gunAnimator: {fileID: 9115421950742907727}
   muzzleEffect: {fileID: 1393824215}
 --- !u!95 &9115421950742907727
 Animator:

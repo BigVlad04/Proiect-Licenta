@@ -52,17 +52,17 @@ public class GunScript : MonoBehaviour
     private void OnEnable()
     {
         gunData.reloading= false;
-        animator.SetBool("Reloading", false);
+        gunAnimator.SetBool("RELOADING", false);
     }
 
     IEnumerator ReloadWeapon()
     {
         gunData.reloading = true;
-        animator.SetBool("Reloading", true);
+        gunAnimator.SetBool("RELOADING", true);
 
         yield return new WaitForSeconds(gunData.reloadTime);
 
-        animator.SetBool("Reloading", false);
+        gunAnimator.SetBool("RELOADING", false);
         gunData.currentAmmo = gunData.magazineSize;
         gunData.reloading = false;
     }
