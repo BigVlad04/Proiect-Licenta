@@ -16175,7 +16175,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &404896865618275899
 GameObject:
   m_ObjectHideFlags: 0
@@ -16332,13 +16332,14 @@ GameObject:
   - component: {fileID: 1784780595300278350}
   - component: {fileID: 4548678741407224964}
   - component: {fileID: 4548678741407224965}
+  - component: {fileID: 4548678741407224966}
   m_Layer: 0
   m_Name: L96_Sniper_Rifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3416837848633782251
 Transform:
   m_ObjectHideFlags: 0
@@ -16348,7 +16349,7 @@ Transform:
   m_GameObject: {fileID: 2603321682950976849}
   serializedVersion: 2
   m_LocalRotation: {x: 0.004541383, y: 0.7491479, z: 0.004407825, w: 0.66237265}
-  m_LocalPosition: {x: 0.16936933, y: -0.14400887, z: 0.21557617}
+  m_LocalPosition: {x: 0.1693693, y: -0.1440089, z: 0.2155762}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21287,6 +21288,27 @@ MonoBehaviour:
   animator: {fileID: 1595498090}
   gunAnimator: {fileID: 0}
   muzzleEffect: {fileID: 434367415}
+--- !u!95 &4548678741407224966
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2603321682950976849}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d36970efb1cd0734e865e655726cccb0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!33 &4784072734968323666
 MeshFilter:
   m_ObjectHideFlags: 0
