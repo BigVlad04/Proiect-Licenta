@@ -4,24 +4,24 @@ using UnityEngine;
 public class GunScript : MonoBehaviour
 {
     [SerializeField] GunData gunData;
-   /* public float damage = 10f;
-    public float range = 100f;
-    public float firerate = 2f;*/
+
     private float nextFireTime = 0f;
 
     public Camera playerCam;
 
-   /* public int magazineSize = 8;
-    private int currentAmmo;
-    public float reloadTime = 2f;
-    private bool currentlyReloading = false;*/
+    public GameObject impactEffect;
 
-    public Animator animator;
+
+
+    //public Animator animator;
     public Animator gunAnimator;
     public GameObject muzzleEffect;
 
+    public AudioSource shootingSound;
+
     private void Start()
     {
+        shootingSound =GetComponent<AudioSource>();
         gunAnimator = GetComponent<Animator>();
         gunData.currentAmmo = gunData.magazineSize;
        // currentAmmo = magazineSize;
@@ -44,6 +44,7 @@ public class GunScript : MonoBehaviour
 
         if (Input.GetButton("Fire1") && Time.time >= nextFireTime)
         {
+
             nextFireTime = Time.time + 1f / gunData.fireRate;
             Shoot();
         }
@@ -69,8 +70,9 @@ public class GunScript : MonoBehaviour
 
     void Shoot()
     {
-        muzzleEffect.GetComponent<ParticleSystem>().Play();
+        shootingSound.Play();
         gunAnimator.SetTrigger("RECOIL");
+        muzzleEffect.GetComponent<ParticleSystem>().Play();
         RaycastHit hit;
         gunData.currentAmmo--;
         
@@ -83,8 +85,13 @@ public class GunScript : MonoBehaviour
             {
                 targetScript.TakeDamage(gunData.damage);
             }
-        }
-        
 
+         /*   if (hit.rigidbody != null) {
+                hit.rigidbody.AddForce(-hit.normal * gunData.damage);           ///add impact force
+            }*/
+
+            GameObject impactPoint=Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+            Destroy(impactPoint, 2f);
+        }
     }
 }
