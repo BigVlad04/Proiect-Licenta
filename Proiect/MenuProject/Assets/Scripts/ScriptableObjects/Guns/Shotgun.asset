@@ -17,6 +17,6 @@ MonoBehaviour:
   range: 25
   magazineSize: 8
   currentAmmo: 8
-  fireRate: 0.6
+  fireRate: 1
   reloadTime: 4
   reloading: 0

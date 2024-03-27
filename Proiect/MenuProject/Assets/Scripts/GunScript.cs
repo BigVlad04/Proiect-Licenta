@@ -69,6 +69,7 @@ public class GunScript : MonoBehaviour
 
     void Shoot()
     {
+        muzzleEffect.GetComponent<ParticleSystem>().Play();
         gunAnimator.SetTrigger("RECOIL");
         RaycastHit hit;
         gunData.currentAmmo--;
@@ -83,7 +84,7 @@ public class GunScript : MonoBehaviour
                 targetScript.TakeDamage(gunData.damage);
             }
         }
-        muzzleEffect.GetComponent<ParticleSystem>().Play();
+        
 
     }
 }
