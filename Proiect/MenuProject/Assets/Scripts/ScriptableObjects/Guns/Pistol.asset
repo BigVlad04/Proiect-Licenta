@@ -16,7 +16,7 @@ MonoBehaviour:
   damage: 35
   range: 50
   magazineSize: 12
-  currentAmmo: 12
-  fireRate: 1
+  currentAmmo: 9
+  fireRate: 3
   reloadTime: 2
   reloading: 0

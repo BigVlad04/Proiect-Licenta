@@ -69,20 +69,21 @@ public class GunScript : MonoBehaviour
 
     void Shoot()
     {
+        gunAnimator.SetTrigger("RECOIL");
         RaycastHit hit;
         gunData.currentAmmo--;
-        muzzleEffect.GetComponent<ParticleSystem>().Play();
-        gunAnimator.SetTrigger("RECOIL");
+        
+        
         if (Physics.Raycast(playerCam.transform.position, playerCam.transform.forward, out hit, gunData.range))
         {
-            Debug.Log(hit.transform.name + " " + gunData.damage);
+            Debug.Log(Time.time+ " " +hit.transform.name + " " + gunData.damage);
             TargetScript targetScript = hit.transform.GetComponent<TargetScript>();
             if (targetScript != null)
             {
                 targetScript.TakeDamage(gunData.damage);
             }
         }
-
+        muzzleEffect.GetComponent<ParticleSystem>().Play();
 
     }
 }

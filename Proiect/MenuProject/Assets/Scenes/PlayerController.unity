@@ -16187,13 +16187,14 @@ GameObject:
   - component: {fileID: 4141746725874826020}
   - component: {fileID: 2206350391970828270}
   - component: {fileID: 4141746725874826021}
+  - component: {fileID: 4141746725874826022}
   m_Layer: 0
   m_Name: AK-47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &848820795554016560
 Transform:
   m_ObjectHideFlags: 0
@@ -16411,6 +16412,27 @@ MonoBehaviour:
   animator: {fileID: 1595498090}
   gunAnimator: {fileID: 0}
   muzzleEffect: {fileID: 4098634961964944093}
+--- !u!95 &4141746725874826022
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404896865618275899}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 239fc501bc8667f4ab71e271d1849e50, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!199 &4188407286602374295
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -21328,7 +21350,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &9115421950742907726
 MonoBehaviour:
   m_ObjectHideFlags: 0
