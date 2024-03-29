@@ -10346,8 +10346,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.73, y: 0.73, z: 0.73}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 443948839}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16501,7 +16501,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8ed93040bb35c484f935fb6d1fd08e5d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 66fa957eb3155ab4a84d0f112a17d478, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -21361,7 +21361,7 @@ MonoBehaviour:
   gunAnimator: {fileID: 4352805530720871063}
   muzzleEffect: {fileID: 556469086}
   audioSource: {fileID: 4352805530720871064}
-  shootingSound: {fileID: 8300000, guid: ff2b0a349c1349f4a82e004d1a12deb1, type: 3}
+  shootingSound: {fileID: 8300000, guid: 8d8030785614c1c4290e2c39aefc1512, type: 3}
 --- !u!95 &4352805530720871063
 Animator:
   serializedVersion: 5
@@ -21394,7 +21394,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ff2b0a349c1349f4a82e004d1a12deb1, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
