@@ -17,11 +17,12 @@ public class GunScript : MonoBehaviour
     public Animator gunAnimator;
     public GameObject muzzleEffect;
 
-    public AudioSource shootingSound;
+    public AudioSource audioSource;
+    public AudioClip shootingSound;
 
     private void Start()
     {
-        shootingSound =GetComponent<AudioSource>();
+        audioSource =GetComponent<AudioSource>();
         gunAnimator = GetComponent<Animator>();
         gunData.currentAmmo = gunData.magazineSize;
        // currentAmmo = magazineSize;
@@ -70,7 +71,7 @@ public class GunScript : MonoBehaviour
 
     void Shoot()
     {
-        shootingSound.Play();
+        audioSource.PlayOneShot(shootingSound);
         gunAnimator.SetTrigger("RECOIL");
         muzzleEffect.GetComponent<ParticleSystem>().Play();
         RaycastHit hit;
