@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class WeaponSwitching : MonoBehaviour
 {
+    public AudioClip weaponSwitch;
+
     public weaponsEnum selectedWeapon = weaponsEnum.PISTOL;
     // Start is called before the first frame update
     void Start()
@@ -29,22 +31,22 @@ public class WeaponSwitching : MonoBehaviour
             }
             weaponChanged = true;
         }
-        if (Input.GetKey(KeyCode.Alpha1))
+        if (Input.GetKey(KeyCode.Alpha1) && selectedWeapon != weaponsEnum.PISTOL)
         {
             selectedWeapon = weaponsEnum.PISTOL;
             weaponChanged=true;
         }
-        if (Input.GetKey(KeyCode.Alpha2))
+        if (Input.GetKey(KeyCode.Alpha2) && selectedWeapon != weaponsEnum.AK47)
         {
             selectedWeapon = weaponsEnum.AK47;
             weaponChanged = true;
         }
-        if (Input.GetKey(KeyCode.Alpha3))
+        if (Input.GetKey(KeyCode.Alpha3) && selectedWeapon != weaponsEnum.SHOTGUN)
         {
             selectedWeapon = weaponsEnum.SHOTGUN;
             weaponChanged = true;
         }
-        if (Input.GetKey(KeyCode.Alpha4))
+        if (Input.GetKey(KeyCode.Alpha4) && selectedWeapon != weaponsEnum.SNIPER)
         {
             selectedWeapon = weaponsEnum.SNIPER;
             weaponChanged = true;
@@ -60,6 +62,7 @@ public class WeaponSwitching : MonoBehaviour
             if (gun == selectedWeapon)
             {
                 weapon.gameObject.SetActive(true);
+                weapon.gameObject.GetComponent<AudioSource>().PlayOneShot(weaponSwitch);
             }
             else {
                 weapon.gameObject.SetActive(false);
