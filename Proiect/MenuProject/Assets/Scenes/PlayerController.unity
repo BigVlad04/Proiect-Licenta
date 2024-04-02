@@ -16468,10 +16468,11 @@ MonoBehaviour:
   gunData: {fileID: 11400000, guid: 0884e27b52cc5df46b01fddc2660d650, type: 2}
   playerCam: {fileID: 1412095625}
   impactEffect: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d, type: 3}
-  gunAnimator: {fileID: 0}
+  gunAnimator: {fileID: 4141746725874826022}
   muzzleEffect: {fileID: 4098634961964944093}
   audioSource: {fileID: 4141746725874826023}
   shootingSound: {fileID: 8300000, guid: 8ed93040bb35c484f935fb6d1fd08e5d, type: 3}
+  reloadSound: {fileID: 8300000, guid: 4258268a33546c2439661c2a099ee39f, type: 3}
 --- !u!95 &4141746725874826022
 Animator:
   serializedVersion: 5
@@ -21364,6 +21365,7 @@ MonoBehaviour:
   muzzleEffect: {fileID: 556469086}
   audioSource: {fileID: 4352805530720871064}
   shootingSound: {fileID: 8300000, guid: e18fcaf52ad4c6d47b3f84367c60b32d, type: 3}
+  reloadSound: {fileID: 0}
 --- !u!95 &4352805530720871063
 Animator:
   serializedVersion: 5
@@ -21542,6 +21544,7 @@ MonoBehaviour:
   muzzleEffect: {fileID: 434367415}
   audioSource: {fileID: 4548678741407224967}
   shootingSound: {fileID: 8300000, guid: 68348a29dae665148b996ffd9874fcd3, type: 3}
+  reloadSound: {fileID: 0}
 --- !u!95 &4548678741407224966
 Animator:
   serializedVersion: 5
@@ -21765,6 +21768,7 @@ MonoBehaviour:
   muzzleEffect: {fileID: 1393824215}
   audioSource: {fileID: 9115421950742907728}
   shootingSound: {fileID: 8300000, guid: 369e5ea4e36c7f84495aa26dcd339ac5, type: 3}
+  reloadSound: {fileID: 8300000, guid: 75609a8d63638d345a20167cd7b4aa86, type: 3}
 --- !u!95 &9115421950742907727
 Animator:
   serializedVersion: 5

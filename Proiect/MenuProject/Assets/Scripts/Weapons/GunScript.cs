@@ -19,6 +19,7 @@ public class GunScript : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioClip shootingSound;
+    public AudioClip reloadSound;
 
     private void Start()
     {
@@ -36,14 +37,15 @@ public class GunScript : MonoBehaviour
             return;
         }
 
-        if (gunData.currentAmmo <= 0 || Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R)) // || (gunData.currentAmmo <= 0 || Input.GetKeyDown(KeyCode.R)))
         {
+            audioSource.PlayOneShot(reloadSound);
             StartCoroutine(ReloadWeapon());
             Debug.Log("Reloading....");
             return;
         }
 
-        if (Input.GetButton("Fire1") && Time.time >= nextFireTime)
+        if (Input.GetButton("Fire1") && gunData.currentAmmo > 0 &&  Time.time >= nextFireTime)
         {
 
             nextFireTime = Time.time + 1f / gunData.fireRate;
