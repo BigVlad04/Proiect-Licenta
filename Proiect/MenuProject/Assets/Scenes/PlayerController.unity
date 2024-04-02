@@ -21544,7 +21544,7 @@ MonoBehaviour:
   muzzleEffect: {fileID: 434367415}
   audioSource: {fileID: 4548678741407224967}
   shootingSound: {fileID: 8300000, guid: 68348a29dae665148b996ffd9874fcd3, type: 3}
-  reloadSound: {fileID: 0}
+  reloadSound: {fileID: 8300000, guid: d426552f685c1b94c923ceb21edec96c, type: 3}
 --- !u!95 &4548678741407224966
 Animator:
   serializedVersion: 5
