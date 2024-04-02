@@ -7,6 +7,7 @@ public class GunScript : MonoBehaviour
 
     private float nextFireTime = 0f;
 
+
     public Camera playerCam;
 
     public GameObject impactEffect;
@@ -20,6 +21,9 @@ public class GunScript : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip shootingSound;
     public AudioClip reloadSound;
+    public AudioClip dryFire;
+    private float nextDryFireTime = 0f;
+    private float dryFireTime = 0.5f;
 
     private void Start()
     {
@@ -45,11 +49,18 @@ public class GunScript : MonoBehaviour
             return;
         }
 
-        if (Input.GetButton("Fire1") && gunData.currentAmmo > 0 &&  Time.time >= nextFireTime)
+        if (Input.GetButton("Fire1"))
         {
-
-            nextFireTime = Time.time + 1f / gunData.fireRate;
-            Shoot();
+            if (gunData.currentAmmo > 0 && Time.time >= nextFireTime )
+            {
+                nextFireTime = Time.time + 1f / gunData.fireRate;
+                Shoot();
+            }
+            else if (gunData.currentAmmo == 0 && Time.time >= nextDryFireTime) {
+                nextDryFireTime = Time.time + dryFireTime;
+                audioSource.PlayOneShot(dryFire);
+            }
+            
         }
     }
 
