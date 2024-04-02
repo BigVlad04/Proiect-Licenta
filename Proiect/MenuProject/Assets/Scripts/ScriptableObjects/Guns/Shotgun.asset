@@ -15,8 +15,8 @@ MonoBehaviour:
   weaponName: Shotgun
   damage: 100
   range: 25
-  magazineSize: 8
-  currentAmmo: 8
+  magazineSize: 6
+  currentAmmo: 6
   fireRate: 1
   reloadTime: 4
   reloading: 0
