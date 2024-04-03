@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class WeaponSwitching : MonoBehaviour
 {
+    public AudioSource audioSource;
     public AudioClip weaponSwitch;
 
     public weaponsEnum selectedWeapon = weaponsEnum.PISTOL;
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         SelectWeapon();
     }
 
@@ -61,8 +63,9 @@ public class WeaponSwitching : MonoBehaviour
         foreach (Transform weapon in transform) {
             if (gun == selectedWeapon)
             {
+                Debug.Log("got here");
                 weapon.gameObject.SetActive(true);
-                weapon.gameObject.GetComponent<AudioSource>().PlayOneShot(weaponSwitch);
+               audioSource.PlayOneShot(weaponSwitch);
             }
             else {
                 weapon.gameObject.SetActive(false);

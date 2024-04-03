@@ -19,18 +19,14 @@ public class GunScript : MonoBehaviour
     public GameObject muzzleEffect;
 
     public AudioSource audioSource;
-    public AudioClip shootingSound;
-    public AudioClip reloadSound;
-    public AudioClip dryFire;
     private float nextDryFireTime = 0f;
     private float dryFireTime = 0.5f;
 
     private void Start()
     {
-        audioSource =GetComponent<AudioSource>();
+        audioSource =transform.parent.GetComponent<AudioSource>();
         gunAnimator = GetComponent<Animator>();
         gunData.currentAmmo = gunData.magazineSize;
-       // currentAmmo = magazineSize;
     }
 
     // Update is called once per frame
@@ -43,7 +39,7 @@ public class GunScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R)) // || (gunData.currentAmmo <= 0 || Input.GetKeyDown(KeyCode.R)))
         {
-            audioSource.PlayOneShot(reloadSound);
+            audioSource.PlayOneShot(gunData.reloadSound);
             StartCoroutine(ReloadWeapon());
             Debug.Log("Reloading....");
             return;
@@ -58,7 +54,7 @@ public class GunScript : MonoBehaviour
             }
             else if (gunData.currentAmmo == 0 && Time.time >= nextDryFireTime) {
                 nextDryFireTime = Time.time + dryFireTime;
-                audioSource.PlayOneShot(dryFire);
+                audioSource.PlayOneShot(gunData.dryFireSound);
             }
             
         }
@@ -84,7 +80,7 @@ public class GunScript : MonoBehaviour
 
     void Shoot()
     {
-        audioSource.PlayOneShot(shootingSound);
+        audioSource.PlayOneShot(gunData.shootingSound);
         gunAnimator.SetTrigger("RECOIL");
         muzzleEffect.GetComponent<ParticleSystem>().Play();
         RaycastHit hit;
