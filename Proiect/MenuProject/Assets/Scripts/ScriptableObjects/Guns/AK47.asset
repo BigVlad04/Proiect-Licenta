@@ -16,7 +16,10 @@ MonoBehaviour:
   damage: 25
   range: 60
   magazineSize: 30
-  currentAmmo: 30
+  currentAmmo: 26
   fireRate: 6
   reloadTime: 3
+  shootingSound: {fileID: 8300000, guid: 8ed93040bb35c484f935fb6d1fd08e5d, type: 3}
+  reloadSound: {fileID: 8300000, guid: 4258268a33546c2439661c2a099ee39f, type: 3}
+  dryFireSound: {fileID: 8300000, guid: 49f0f8ca109b5af4097e9e7f7be48cf1, type: 3}
   reloading: 0
