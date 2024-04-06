@@ -1,44 +1,12 @@
-/*using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
-public class WeaponSway : MonoBehaviour
-{
-
-    public float weaponSmoothing;
-    public float swayMultiplier;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        float mouseX = Input.GetAxisRaw("Mouse X") * swayMultiplier;
-        float mouseY = Input.GetAxisRaw("Mouse Y") * swayMultiplier;
-
-        Quaternion rotationX = Quaternion.AngleAxis(-mouseY, Vector3.right);
-        Quaternion rotationY = Quaternion.AngleAxis(mouseX, Vector3.up);
-
-        Quaternion targetRotation = rotationX * rotationY;
-
-        transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRotation, weaponSmoothing * Time.deltaTime);
-
-    }
-}*/
-
-using UnityEngine;
-
+/// <summary>
+/// this script makes weapons sway realistically when the player moves the mouse
+/// </summary>
 public class WeaponSway : MonoBehaviour
 {
     public float swayAmount = 0.02f;
     public float maxSwayAmount = 0.06f;
     public float smoothAmount = 6f;
-
     private Vector3 initialPosition;
 
     void Start()

@@ -19,7 +19,9 @@ MonoBehaviour:
   currentAmmo: 5
   fireRate: 1
   reloadTime: 4
+  isAutomatic: 0
   shootingSound: {fileID: 8300000, guid: e18fcaf52ad4c6d47b3f84367c60b32d, type: 3}
   reloadSound: {fileID: 8300000, guid: 318b3ed379a1fca4ab6d3461e4ecdd68, type: 3}
   dryFireSound: {fileID: 8300000, guid: 49f0f8ca109b5af4097e9e7f7be48cf1, type: 3}
+  dryFireDuration: 0.5
   reloading: 0

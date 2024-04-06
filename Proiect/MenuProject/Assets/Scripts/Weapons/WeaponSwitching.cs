@@ -1,15 +1,17 @@
 using UnityEngine;
-
+/// <summary>
+/// This script handles weapon switching
+/// </summary>
 public class WeaponSwitching : MonoBehaviour
 {
-    public AudioSource audioSource;
+    private AudioSource audioSource;
     public AudioClip weaponSwitch;
+    public weaponsEnum selectedWeapon;
 
-    public weaponsEnum selectedWeapon = weaponsEnum.PISTOL;
-    // Start is called before the first frame update
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        selectedWeapon = weaponsEnum.PISTOL;    //initially the pistol is equiped
         SelectWeapon();
     }
 
@@ -17,7 +19,9 @@ public class WeaponSwitching : MonoBehaviour
     void Update()
     {
         bool weaponChanged = false;
-        if (Input.GetAxis("Mouse ScrollWheel") > 0f) {
+
+        //switching through mouse wheel
+        if (Input.GetAxis("Mouse ScrollWheel") > 0f) {      
             selectedWeapon++;
             if (selectedWeapon > weaponsEnum.SNIPER) { 
                 selectedWeapon = weaponsEnum.PISTOL;
@@ -33,6 +37,8 @@ public class WeaponSwitching : MonoBehaviour
             }
             weaponChanged = true;
         }
+
+        //switching through numpad keys
         if (Input.GetKey(KeyCode.Alpha1) && selectedWeapon != weaponsEnum.PISTOL)
         {
             selectedWeapon = weaponsEnum.PISTOL;
@@ -63,7 +69,6 @@ public class WeaponSwitching : MonoBehaviour
         foreach (Transform weapon in transform) {
             if (gun == selectedWeapon)
             {
-                Debug.Log("got here");
                 weapon.gameObject.SetActive(true);
                audioSource.PlayOneShot(weaponSwitch);
             }
