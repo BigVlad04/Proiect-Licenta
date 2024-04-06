@@ -15,6 +15,8 @@ public class GunData : ScriptableObject
     public float fireRate;
     public float reloadTime;
 
+    public bool isAutomatic;
+
 
     public AudioClip shootingSound;
     public AudioClip reloadSound;

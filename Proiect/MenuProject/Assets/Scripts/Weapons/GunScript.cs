@@ -60,6 +60,19 @@ public class GunScript : MonoBehaviour
         }
     }
 
+    /*bool CheckFireButton() {          //optional, if we want to make semi automatic fire
+        if (gunData.isAutomatic == true)
+        {
+            if (Input.GetButton("Fire1"))
+                return true;
+        }
+        else if (gunData.isAutomatic == false) {
+            if (Input.GetButtonDown("Fire1"))
+                return true;
+        }
+        return false;
+    }*/ 
+
     private void OnEnable()
     {
         gunData.reloading= false;
