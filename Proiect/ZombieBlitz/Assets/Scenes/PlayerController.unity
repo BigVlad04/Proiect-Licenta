@@ -24302,6 +24302,8 @@ GameObject:
   - component: {fileID: 7389507113100873610}
   - component: {fileID: 7389507113100873611}
   - component: {fileID: 7389507113100873612}
+  - component: {fileID: 7389507113100873614}
+  - component: {fileID: 7389507113100873613}
   m_Layer: 0
   m_Name: Zombie1
   m_TagString: Untagged
@@ -25504,11 +25506,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectionRange: 10
-  timeBetweenAttacks: 3
   attackRange: 2.5
-  targetInSight: 0
-  targetInRange: 0
-  distanceToPlayer: 0
+  timeBetweenAttacks: 3
+--- !u!114 &7389507113100873613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4493914614296989923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d6c7b2c7b61a2642a17bdfb179dcfe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 60
+--- !u!65 &7389507113100873614
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4493914614296989923}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.64, y: 1.76, z: 0.43}
+  m_Center: {x: 0, y: 0.88, z: 0}
 --- !u!1 &7478079059467487246
 GameObject:
   m_ObjectHideFlags: 0
