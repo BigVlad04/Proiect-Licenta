@@ -2,25 +2,25 @@ Exemple
 
 Proiect/PlayerController
 
-Proiect/MenuProject/[Ll]ibrary/
-Proiect/MenuProject/[Tt]emp/
-Proiect/MenuProject/[Oo]bj/
-Proiect/MenuProject/[Bb]uild/
-Proiect/MenuProject/[Bb]uilds/
-Proiect/MenuProject/[Ll]ogs/
-Proiect/MenuProject/[Uu]ser[Ss]ettings/
+Proiect/ZombieBlitz/[Ll]ibrary/
+Proiect/ZombieBlitz/[Tt]emp/
+Proiect/ZombieBlitz/[Oo]bj/
+Proiect/ZombieBlitz/[Bb]uild/
+Proiect/ZombieBlitz/[Bb]uilds/
+Proiect/ZombieBlitz/[Ll]ogs/
+Proiect/ZombieBlitz/[Uu]ser[Ss]ettings/
 
-Proiect/MenuProject/[Mm]emoryCaptures/
+Proiect/ZombieBlitz/[Mm]emoryCaptures/
 
-Proiect/MenuProject/[Rr]ecordings/
+Proiect/ZombieBlitz/[Rr]ecordings/
 
-Proiect/MenuProject/[Aa]ssets/Plugins/Editor/JetBrains*
+Proiect/ZombieBlitz/[Aa]ssets/Plugins/Editor/JetBrains*
 
-Proiect/MenuProject/.vs/
+Proiect/ZombieBlitz/.vs/
 
-Proiect/MenuProject/.gradle/
+Proiect/ZombieBlitz/.gradle/
 
-Proiect/MenuProject/ExportedObj/
+Proiect/ZombieBlitz/ExportedObj/
 .consulo/
 *.csproj
 *.unityproj
