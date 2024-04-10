@@ -4,7 +4,12 @@ using UnityEngine;
 /// </summary>
 public class TargetScript : MonoBehaviour
 {
-    public float health = 30f;
+    public EnemyData enemyData;
+    public float health;
+
+    void Start() {
+        health = enemyData.health;
+    }
     public void TakeDamage(float damage)
     {
         health -= damage;

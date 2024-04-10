@@ -3,19 +3,15 @@ using UnityEngine.AI;
 
 public class ZombieController : MonoBehaviour
 {
+    public EnemyData enemyData;
     NavMeshAgent agent;
     Transform target;
-
-    public float detectionRange; //optional, if we want zombies to follow only when the player gets close
-
-    private float health = 100;
-    public float attackRange;
-    public float timeBetweenAttacks;    //will need to change these with values taken from a scriptable object
-
+    
     float distanceToPlayer;
     bool targetInSight; 
     bool targetInRange;
     bool canAttack;
+    
 
     void Start()
     {
@@ -28,8 +24,8 @@ public class ZombieController : MonoBehaviour
     void Update()
     {
         distanceToPlayer = Vector3.Distance(transform.position, target.position);
-        targetInSight = (distanceToPlayer <= detectionRange);
-        targetInRange = (distanceToPlayer <= attackRange);
+        targetInSight = (distanceToPlayer <= enemyData.detectionRange);
+        targetInRange = (distanceToPlayer <= enemyData.attackRange);
         if (targetInSight && !targetInRange) ChasePlayer();
         if (targetInSight && targetInRange) Attack();
     }
@@ -47,7 +43,7 @@ public class ZombieController : MonoBehaviour
             //Attack, apply damage to player.
             Debug.Log("Attacking!");
             canAttack = false;
-            Invoke(nameof(ResetAttack), timeBetweenAttacks);
+            Invoke(nameof(ResetAttack), enemyData.timeBetweenAttacks);
         }
     }
     void FaceTarget()
@@ -63,9 +59,9 @@ public class ZombieController : MonoBehaviour
 
     public void TakeDamage(float damage) //when shot.
     {
-        health -= damage;
+        enemyData.health -= damage;
         //Debug.Log("Health left: " + health);    //for debugging
-        if (health <= 0)
+        if (enemyData.health <= 0)
         {
             DestroyTarget();
         }
