@@ -73,8 +73,12 @@ public class GunScript : MonoBehaviour
             {
                 targetScript.TakeDamage(gunData.damage);    //if hit target, apply damage
             }
-            GameObject impactPoint = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal)); //add bullet hole
-            Destroy(impactPoint, 2f);      //destroy bullet hole after 2 seconds
+            if(hit.transform.gameObject.layer != 7 && hit.transform.gameObject.layer != 6)
+            {
+                GameObject impactPoint = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal)); //add bullet hole
+                Destroy(impactPoint, 2f);      //destroy bullet hole after 2 seconds
+            }
+            
 
             /*   if (hit.rigidbody != null) {
                    hit.rigidbody.AddForce(-hit.normal * gunData.damage);           ---> OPTIONAL: add impact force
