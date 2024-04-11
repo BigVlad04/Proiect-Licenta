@@ -21,4 +21,4 @@ MonoBehaviour:
   speed: 4
   angularSpeed: 100
   acceleration: 8
-  stoppingDistance: 2
+  stoppingDistance: 3

@@ -15,10 +15,10 @@ MonoBehaviour:
   zombieName: 
   health: 100
   damage: 0
-  detectionRange: 10
+  detectionRange: 15
   attackRange: 2
-  timeBetweenAttacks: 2
+  timeBetweenAttacks: 1
   speed: 6
   angularSpeed: 200
-  acceleration: 6
+  acceleration: 10
   stoppingDistance: 2

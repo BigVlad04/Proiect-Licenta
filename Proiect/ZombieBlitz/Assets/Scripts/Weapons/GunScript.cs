@@ -10,7 +10,8 @@ public class GunScript : MonoBehaviour
     public Camera playerCam;
     public Animator gunAnimator;
     public GameObject muzzleEffect;
-    public GameObject impactEffect;
+    public GameObject impactEffectEnvironment;
+    public GameObject impactEffectZombie;
     public AudioSource audioSource;
 
     //fire-time related
@@ -68,21 +69,34 @@ public class GunScript : MonoBehaviour
         if (Physics.Raycast(playerCam.transform.position, playerCam.transform.forward, out hit, gunData.range))
         {
             Debug.Log(Time.time + " " + hit.transform.name + " " + gunData.damage);     //for debugging purposes
-            TargetScript targetScript = hit.transform.GetComponent<TargetScript>();
+            ZombieController targetScript = hit.transform.GetComponent<ZombieController>();
             if (targetScript != null)
             {
                 targetScript.TakeDamage(gunData.damage);    //if hit target, apply damage
             }
-            if(hit.transform.gameObject.layer != 7 && hit.transform.gameObject.layer != 6)
-            {
-                GameObject impactPoint = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal)); //add bullet hole
-                Destroy(impactPoint, 2f);      //destroy bullet hole after 2 seconds
-            }
-            
+            HandleImpactEffects(hit);
 
             /*   if (hit.rigidbody != null) {
                    hit.rigidbody.AddForce(-hit.normal * gunData.damage);           ---> OPTIONAL: add impact force
                }*/
+        }
+    }
+
+    void HandleImpactEffects(RaycastHit hit) {
+        if (hit.transform.gameObject.layer != 6)
+        {
+            if(hit.transform.gameObject.layer == 7)         //impact effect for zombie
+            {
+                GameObject impactPoint = Instantiate(impactEffectZombie, hit.point, Quaternion.LookRotation(hit.normal)); //add bullet hole
+                Destroy(impactPoint, 1f);      //destroy bullet hole
+
+            }
+            else            //impact effect for environment
+            {
+                GameObject impactPoint = Instantiate(impactEffectEnvironment, hit.point, Quaternion.LookRotation(hit.normal)); //add bullet hole
+                Destroy(impactPoint, 3f);      //destroy bullet hole
+            }
+
         }
     }
 

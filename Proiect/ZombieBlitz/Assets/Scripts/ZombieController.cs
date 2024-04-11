@@ -8,6 +8,7 @@ public class ZombieController : MonoBehaviour
     Transform target;
     Animator animator;
 
+    public float health;
     float distanceToPlayer;
     bool targetInSight;
     bool targetInRange;
@@ -20,6 +21,7 @@ public class ZombieController : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         target = PlayerManager.instance.player.transform;
         canAttack = true;
+        health = enemyData.health;
         setNavMeshStats();
 
     }
@@ -64,6 +66,7 @@ public class ZombieController : MonoBehaviour
         FaceTarget();
         if (canAttack)
         {
+            animator.SetBool("ATTACKING", true) ;
             //Attack, apply damage to player.
             Debug.Log("Attacking!");
             canAttack = false;
@@ -79,20 +82,29 @@ public class ZombieController : MonoBehaviour
 
     void ResetAttack()
     {
+        if(!targetInRange)
+            animator.SetBool("ATTACKING", false);
         canAttack = true;
     }
 
-    public void TakeDamage(float damage) //when shot.
+    public void TakeDamage(float damage)
     {
-        enemyData.health -= damage;
+        health -= damage;
         //Debug.Log("Health left: " + health);    //for debugging
-        if (enemyData.health <= 0)
+        if (health <= 0)
         {
+            //agent.SetDestination(transform.position);
+            agent.Stop();
+            if (Random.value > 0.5f)
+                animator.SetTrigger("DEATHFORWARD");
+            else
+                animator.SetTrigger("DEATHBACKWARD");
             DestroyTarget();
         }
     }
+
     void DestroyTarget()
     {
-        Destroy(gameObject);
+        Destroy(gameObject,4f);
     }
 }
