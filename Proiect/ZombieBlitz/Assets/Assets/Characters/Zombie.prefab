@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 1883788606357189797}
   - component: {fileID: 7009693808322721538}
   - component: {fileID: 842292903999708449}
+  - component: {fileID: 2363770924856824384}
   - component: {fileID: 2439360349139764942}
   m_Layer: 7
   m_Name: Zombie
@@ -202,6 +203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: 9d0cb7180e60ed74d9888d9144e07b66, type: 2}
+  health: 0
 --- !u!65 &842292903999708449
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -221,8 +223,29 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.64, y: 1.76, z: 0.43}
-  m_Center: {x: 0, y: 0.88, z: 0}
+  m_Size: {x: 0.44, y: 1.5, z: 0.25}
+  m_Center: {x: 0, y: 0.75, z: -0.03}
+--- !u!65 &2363770924856824384
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676448002621194303}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.18, y: 0.31, z: 0.22}
+  m_Center: {x: 0, y: 1.65, z: 0}
 --- !u!114 &2439360349139764942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,6 +260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: 9d0cb7180e60ed74d9888d9144e07b66, type: 2}
   health: 60
+  animator: {fileID: 6147874142153167832}
 --- !u!1 &959858570538447605
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,6 +370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2768424531332751649}
   - component: {fileID: 7776160052625804391}
+  - component: {fileID: 5686967424359875833}
   m_Layer: 7
   m_Name: Z_Hip
   m_TagString: Untagged
@@ -425,6 +450,27 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.025750682, y: 0.055356823, z: 0.0000008419156}
     m_Extent: {x: 0.16131075, y: 0.13559681, z: 0.19217956}
   m_DirtyAABB: 0
+--- !u!65 &5686967424359875833
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287599438051020097}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 0.29, y: 0.15, z: 0.26}
+  m_Center: {x: -0.00000085016444, y: -0.010245, z: 0.90579665}
 --- !u!1 &1316129681290346764
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,6 +481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4946369138164775325}
   - component: {fileID: 4336068660538497361}
+  - component: {fileID: 6234968111827415334}
   m_Layer: 7
   m_Name: Z_Body
   m_TagString: Untagged
@@ -514,6 +561,27 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.2738102, y: 0.04886008, z: 0.000000022351742}
     m_Extent: {x: 0.19489695, y: 0.16547251, z: 0.15937948}
   m_DirtyAABB: 0
+--- !u!65 &6234968111827415334
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316129681290346764}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 0.29, y: 0.2, z: 0.46}
+  m_Center: {x: -0.00000002963246, y: 0.002111908, z: 1.1538321}
 --- !u!1 &1637959638894579318
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,6 +1036,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6785147590518914880}
   - component: {fileID: 6428169722692552105}
+  - component: {fileID: 5570065002254240622}
   m_Layer: 7
   m_Name: Z_L_LegThigh
   m_TagString: Untagged
@@ -1047,6 +1116,27 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.22870532, y: 0.049779415, z: 0.11656566}
     m_Extent: {x: 0.22552583, y: 0.112586156, z: 0.12030201}
   m_DirtyAABB: 0
+--- !u!65 &5570065002254240622
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2487776080872554382}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 0.14, y: 0.14, z: 0.45}
+  m_Center: {x: -0.12, y: -0.0005606301, z: 0.6513227}
 --- !u!1 &2613702398579119025
 GameObject:
   m_ObjectHideFlags: 0
@@ -1470,6 +1560,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2582049720392546407}
   - component: {fileID: 7914141960343315015}
+  - component: {fileID: 7290958787380970996}
   m_Layer: 7
   m_Name: Z_Head
   m_TagString: Untagged
@@ -1555,6 +1646,29 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.13655424, y: 0.08126316, z: 0.000000037252903}
     m_Extent: {x: 0.15378535, y: 0.12076975, z: 0.08768331}
   m_DirtyAABB: 0
+--- !u!136 &7290958787380970996
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4323790570017296117}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.09
+  m_Height: 0.2915395
+  m_Direction: 2
+  m_Center: {x: -0.000000046940226, y: -0.01740323, z: 1.6408844}
 --- !u!1 &4572372644148136922
 GameObject:
   m_ObjectHideFlags: 0
@@ -1696,6 +1810,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1008822594074610957}
   - component: {fileID: 895037109062674041}
+  - component: {fileID: 5189907328235040747}
   m_Layer: 7
   m_Name: Z_BodyTop
   m_TagString: Untagged
@@ -1780,6 +1895,29 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.23468512, y: -0.0029639155, z: -0.000000029802322}
     m_Extent: {x: 0.22150296, y: 0.16935377, z: 0.28016195}
   m_DirtyAABB: 0
+--- !u!136 &5189907328235040747
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4977609865448735778}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.14
+  m_Height: 0.4
+  m_Direction: 0
+  m_Center: {x: 0.00000005839729, y: 0.045092702, z: 1.3813975}
 --- !u!1 &5194296744174854292
 GameObject:
   m_ObjectHideFlags: 0
@@ -2141,6 +2279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 983129938266697427}
   - component: {fileID: 919243128864800568}
+  - component: {fileID: 5789935241462135639}
   m_Layer: 7
   m_Name: Z_R_LegThigh
   m_TagString: Untagged
@@ -2220,6 +2359,27 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.22868732, y: 0.049746126, z: -0.116600156}
     m_Extent: {x: 0.22553974, y: 0.112623066, z: 0.120324135}
   m_DirtyAABB: 0
+--- !u!65 &5789935241462135639
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6053204968961783782}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 0.14, y: 0.14, z: 0.45}
+  m_Center: {x: 0.12, y: -0.0005606301, z: 0.6513227}
 --- !u!1 &6144293645700347667
 GameObject:
   m_ObjectHideFlags: 0
