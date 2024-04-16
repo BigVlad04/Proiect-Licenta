@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HugeZombie
   m_EditorClassIdentifier: 
   zombieName: HugeZombie
-  health: 600
+  health: 60
   damage: 0
   detectionRange: 10
   attackRange: 2

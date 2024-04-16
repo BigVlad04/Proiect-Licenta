@@ -105,6 +105,6 @@ public class ZombieController : MonoBehaviour
         else
             animator.SetTrigger("DEATHBACKWARD");
        // GetComponent<Rigidbody>().velocity = Vector3.zero;
-        Destroy(gameObject, 4f);
+        Destroy(gameObject, 6f);
     }
 }
