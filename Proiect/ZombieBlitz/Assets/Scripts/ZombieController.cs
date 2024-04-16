@@ -93,18 +93,18 @@ public class ZombieController : MonoBehaviour
         //Debug.Log("Health left: " + health);    //for debugging
         if (health <= 0)
         {
-            //agent.SetDestination(transform.position);
-            agent.Stop();
-            if (Random.value > 0.5f)
-                animator.SetTrigger("DEATHFORWARD");
-            else
-                animator.SetTrigger("DEATHBACKWARD");
-            DestroyTarget();
+            Death();
         }
     }
 
-    void DestroyTarget()
+    void Death()
     {
-        Destroy(gameObject,4f);
+        agent.Stop();
+        if (Random.value > 0.5f)
+            animator.SetTrigger("DEATHFORWARD");
+        else
+            animator.SetTrigger("DEATHBACKWARD");
+       // GetComponent<Rigidbody>().velocity = Vector3.zero;
+        Destroy(gameObject, 4f);
     }
 }
