@@ -64,25 +64,35 @@ public class GunScript : MonoBehaviour
         gunAnimator.SetTrigger("RECOIL");                   //add recoil
         muzzleEffect.GetComponent<ParticleSystem>().Play(); //add muzzle flash
         gunData.currentAmmo--;
+        HandleShot();
+        
+    }
 
+    void HandleShot() 
+    {
         RaycastHit hit;
         if (Physics.Raycast(playerCam.transform.position, playerCam.transform.forward, out hit, gunData.range))
         {
-            
+
             ZombieController targetScript = hit.transform.GetComponentInParent<ZombieController>();
             if (targetScript != null)
             {
                 if (hit.transform.gameObject.tag.Equals("Head"))
                 {
-                    targetScript.TakeDamage(gunData.damage*1.5f);
-                    Debug.Log(Time.time + " " + hit.transform.name + " " + gunData.damage*1.5f);     //for debugging purposes
+                    targetScript.TakeDamage(gunData.damage * 1.5f);
+                    Debug.Log(Time.time + " " + hit.transform.name + " " + gunData.damage * 1.5f);     //for debugging purposes
                 }
                 else if (hit.transform.gameObject.tag.Equals("Body"))
                 {
                     Debug.Log(Time.time + " " + hit.transform.name + " " + gunData.damage);     //for debugging purposes
                     targetScript.TakeDamage(gunData.damage);    //if hit target, apply damage
                 }
-                    
+                else if (hit.transform.gameObject.tag.Equals("Legs"))
+                {
+                    Debug.Log(Time.time + " " + hit.transform.name + " " + gunData.damage*0.66f);     //for debugging purposes
+                    targetScript.TakeDamage(gunData.damage * 0.66f);
+                }
+
             }
             HandleImpactEffects(hit);
 
