@@ -68,11 +68,21 @@ public class GunScript : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(playerCam.transform.position, playerCam.transform.forward, out hit, gunData.range))
         {
-            Debug.Log(Time.time + " " + hit.transform.name + " " + gunData.damage);     //for debugging purposes
-            ZombieController targetScript = hit.transform.GetComponent<ZombieController>();
+            
+            ZombieController targetScript = hit.transform.GetComponentInParent<ZombieController>();
             if (targetScript != null)
             {
-                targetScript.TakeDamage(gunData.damage);    //if hit target, apply damage
+                if (hit.transform.gameObject.tag.Equals("Head"))
+                {
+                    targetScript.TakeDamage(gunData.damage*1.5f);
+                    Debug.Log(Time.time + " " + hit.transform.name + " " + gunData.damage*1.5f);     //for debugging purposes
+                }
+                else if (hit.transform.gameObject.tag.Equals("Body"))
+                {
+                    Debug.Log(Time.time + " " + hit.transform.name + " " + gunData.damage);     //for debugging purposes
+                    targetScript.TakeDamage(gunData.damage);    //if hit target, apply damage
+                }
+                    
             }
             HandleImpactEffects(hit);
 
