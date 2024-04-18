@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -103,6 +104,11 @@ public class ZombieController : MonoBehaviour
     void Death()
     {
         agent.Stop();
+        BoxCollider[] colliders = gameObject.GetComponents<BoxCollider>();
+        foreach (BoxCollider collider in colliders)
+        { 
+            collider.enabled = false;
+        }
         if (Random.value > 0.5f)
             animator.SetTrigger("DEATHFORWARD");
         else
