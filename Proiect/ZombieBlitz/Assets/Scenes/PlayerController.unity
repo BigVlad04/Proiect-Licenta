@@ -5698,7 +5698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterController: {fileID: 443948838}
   PlayerBody: {fileID: 628104617}
-  movementSpeed: 10
+  movementSpeed: 7
   gravity: -20
   groundChecker: {fileID: 1079735591}
   groundCheckRadius: 0.4

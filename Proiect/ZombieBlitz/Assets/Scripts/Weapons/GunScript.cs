@@ -79,7 +79,7 @@ public class GunScript : MonoBehaviour
             {
                 if (hit.transform.gameObject.tag.Equals("Head"))
                 {
-                    targetScript.TakeDamage(gunData.damage * 1.5f);
+                    targetScript.TakeDamage(gunData.damage * 2f);
                     Debug.Log(Time.time + " " + hit.transform.name + " " + gunData.damage * 1.5f);     //for debugging purposes
                 }
                 else if (hit.transform.gameObject.tag.Equals("Body"))
