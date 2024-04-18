@@ -9,7 +9,7 @@ public class ZombieController : MonoBehaviour
     Transform target;
     Animator animator;
 
-    public float health;
+    public float health;        //should make private with a getter
     float distanceToPlayer;
     bool targetInSight;
     bool targetInRange;
@@ -26,7 +26,6 @@ public class ZombieController : MonoBehaviour
         setNavMeshStats();
 
     }
-    //will want to automatically set navMeshAgent values from the StartMethod.
 
     void setNavMeshStats()
     {
@@ -46,37 +45,34 @@ public class ZombieController : MonoBehaviour
             agent.SetDestination(transform.position);
             animator.SetBool("CHASING", false);
         }
-        if (targetInSight && !targetInRange)
+        else if (targetInSight && !targetInRange)
         {
             ChasePlayer();
         }
-
-        if (targetInSight && targetInRange) Attack();
+        else if (targetInSight && targetInRange) Attack();
     }
 
     public void ChasePlayer()
     {
         animator.SetBool("CHASING", true);
+        animator.SetBool("ATTACKING", false);
         agent.SetDestination(target.position);
-        if (distanceToPlayer <= agent.stoppingDistance)
-            FaceTarget();   //maybe get rid of this and make stopping distance the same as attackrange?
     }
 
     public void Attack()
     {
         FaceTarget();
+        animator.SetBool("ATTACKING", true);
         if (canAttack)
         {
-            animator.SetBool("ATTACKING", true) ;
             //Attack, apply damage to player.
-            Debug.Log("Attacking!");
             canAttack = false;
             Invoke(nameof(ResetAttack), enemyData.timeBetweenAttacks);
         }
     }
     void FaceTarget()
     {
-        if(health > 0)
+        if(health > 0)      //won't face target while dead
         {
             Vector3 direction = (target.position - transform.position).normalized;
             Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
@@ -104,7 +100,7 @@ public class ZombieController : MonoBehaviour
     void Death()
     {
         agent.Stop();
-        BoxCollider[] colliders = gameObject.GetComponents<BoxCollider>();
+        BoxCollider[] colliders = gameObject.GetComponentsInChildren<BoxCollider>();  
         foreach (BoxCollider collider in colliders)
         { 
             collider.enabled = false;
