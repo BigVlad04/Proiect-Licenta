@@ -92,6 +92,11 @@ public class GunScript : MonoBehaviour
                     Debug.Log(Time.time + " " + hit.transform.name + " " + gunData.damage*0.66f);     //for debugging purposes
                     targetScript.TakeDamage(gunData.damage * 0.66f);
                 }
+                else if (hit.transform.gameObject.tag.Equals("Arms"))
+                {
+                    Debug.Log(Time.time + " " + hit.transform.name + " " + gunData.damage * 0.75f);     //for debugging purposes
+                    targetScript.TakeDamage(gunData.damage * 0.66f);
+                }
 
             }
             HandleImpactEffects(hit);
