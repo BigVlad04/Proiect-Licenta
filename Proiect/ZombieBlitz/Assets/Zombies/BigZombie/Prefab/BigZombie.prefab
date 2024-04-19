@@ -2506,7 +2506,7 @@ GameObject:
   - component: {fileID: 9184685296933290930}
   m_Layer: 7
   m_Name: Left:LegCollider
-  m_TagString: Untagged
+  m_TagString: Legs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
