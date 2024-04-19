@@ -985,8 +985,6 @@ GameObject:
   - component: {fileID: 3312694589624810568}
   - component: {fileID: 1779957105363774141}
   - component: {fileID: 7047592879796369327}
-  - component: {fileID: 7822674240320197096}
-  - component: {fileID: 3690375001101536338}
   m_Layer: 7
   m_Name: BigZombie
   m_TagString: Untagged
@@ -1074,48 +1072,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: c2fac29bcad08f3479e00ef98807cd2d, type: 2}
   health: 0
---- !u!65 &7822674240320197096
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3141507966391168399}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.61, y: 1.8, z: 0.47}
-  m_Center: {x: 0, y: 0.87, z: -0.03}
---- !u!65 &3690375001101536338
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3141507966391168399}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.21, y: 0.238, z: 0.43}
-  m_Center: {x: 0, y: 1.89, z: -0.03}
 --- !u!1 &3240155778509441076
 GameObject:
   m_ObjectHideFlags: 0
