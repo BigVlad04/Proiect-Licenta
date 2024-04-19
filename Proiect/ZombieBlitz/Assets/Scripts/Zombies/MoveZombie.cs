@@ -1,14 +1,13 @@
 using UnityEngine;
 using UnityEngine.AI;
-
+/// <summary>
+/// !!Not Used!!
+/// Script for testing zombie movement with NavMesh
+/// </summary>
 public class MoveZombie : MonoBehaviour
 {
     public NavMeshAgent zombie;
-
     public Camera playerCam;
-    
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0)) {
@@ -19,8 +18,5 @@ public class MoveZombie : MonoBehaviour
 
             } 
         }
-        
-
-
     }
 }

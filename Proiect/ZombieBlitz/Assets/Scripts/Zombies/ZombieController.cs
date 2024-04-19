@@ -1,20 +1,20 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
-
+/// <summary>
+/// This script controlls the behaviour and functionality of a zombie
+/// </summary>
 public class ZombieController : MonoBehaviour
 {
     public EnemyData enemyData;
     NavMeshAgent agent;
-    Transform target;
     Animator animator;
-
-    public float health;        //should make private with a getter
+    Transform target;
+    private float health;
     float distanceToPlayer;
     bool targetInSight;
     bool targetInRange;
     bool canAttack;
-
 
     void Start()
     {
@@ -24,7 +24,6 @@ public class ZombieController : MonoBehaviour
         canAttack = true;
         health = enemyData.health;
         setNavMeshStats();
-
     }
 
     void setNavMeshStats()
@@ -40,7 +39,7 @@ public class ZombieController : MonoBehaviour
         distanceToPlayer = Vector3.Distance(transform.position, target.position);
         targetInSight = (distanceToPlayer <= enemyData.detectionRange);
         targetInRange = (distanceToPlayer <= enemyData.attackRange);
-        if (!targetInSight && !targetInRange)
+        if (!targetInSight && !targetInRange)       //this will be disabled in the final game, the zombies will always chase the player
         {
             agent.SetDestination(transform.position);
             animator.SetBool("CHASING", false);
@@ -90,7 +89,6 @@ public class ZombieController : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health -= damage;
-        //Debug.Log("Health left: " + health);    //for debugging
         if (health <= 0)
         {
             Death();
@@ -99,17 +97,21 @@ public class ZombieController : MonoBehaviour
 
     void Death()
     {
-        agent.Stop();
+        agent.isStopped = true;
         BoxCollider[] colliders = gameObject.GetComponentsInChildren<BoxCollider>();  
-        foreach (BoxCollider collider in colliders)
+        /*foreach (BoxCollider collider in colliders)     //disable collider so that player can't shoot the zombie while dead. Optional
         { 
             collider.enabled = false;
-        }
-        if (Random.value > 0.5f)
+        }*/
+        if (Random.value > 0.5f)    //randomly fall forward or backwards
             animator.SetTrigger("DEATHFORWARD");
         else
             animator.SetTrigger("DEATHBACKWARD");
-       // GetComponent<Rigidbody>().velocity = Vector3.zero;
-        Destroy(gameObject, 6f);
+        Destroy(gameObject, 6f);    //destroy the zombie after 6 seconds.
+    }
+
+    public float GetHealth()
+    {
+        return health;
     }
 }

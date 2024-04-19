@@ -1,6 +1,6 @@
 using UnityEngine;
 /// <summary>
-/// Simple target script
+/// Simple target script. !!Not used anymore!!
 /// </summary>
 public class TargetScript : MonoBehaviour
 {
