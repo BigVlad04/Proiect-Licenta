@@ -65,6 +65,7 @@ public class ZombieController : MonoBehaviour
         if (canAttack)
         {
             //Attack, apply damage to player.
+            target.GetComponent<PlayerData>().takeDamage(enemyData.damage);
             canAttack = false;
             Invoke(nameof(ResetAttack), enemyData.timeBetweenAttacks);
         }
