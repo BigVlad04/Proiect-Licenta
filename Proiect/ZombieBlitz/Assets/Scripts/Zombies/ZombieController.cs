@@ -39,16 +39,19 @@ public class ZombieController : MonoBehaviour
         distanceToPlayer = Vector3.Distance(transform.position, target.position);
         targetInSight = (distanceToPlayer <= enemyData.detectionRange);
         targetInRange = (distanceToPlayer <= enemyData.attackRange);
-        if (!targetInSight && !targetInRange)       //this will be disabled in the final game, the zombies will always chase the player
+        if(health > 0)
         {
-            agent.SetDestination(transform.position);
-            animator.SetBool("CHASING", false);
+            if (!targetInSight && !targetInRange)       //this will be disabled in the final game, the zombies will always chase the player
+            {
+                agent.SetDestination(transform.position);
+                animator.SetBool("CHASING", false);
+            }
+            else if (targetInSight && !targetInRange)
+            {
+                ChasePlayer();
+            }
+            else if (targetInSight && targetInRange) Attack();
         }
-        else if (targetInSight && !targetInRange)
-        {
-            ChasePlayer();
-        }
-        else if (targetInSight && targetInRange) Attack();
     }
 
     public void ChasePlayer()
