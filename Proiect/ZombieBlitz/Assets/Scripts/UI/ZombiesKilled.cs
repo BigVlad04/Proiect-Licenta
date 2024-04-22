@@ -7,6 +7,6 @@ public class ZombiesKilled : MonoBehaviour
     public TextMeshProUGUI enemiesKilledText;
     void Update()
     {
-        enemiesKilledText.text = ": " + player.GetComponent<PlayerData>().getZombiesKilled().ToString();
+        enemiesKilledText.text = "x " + player.GetComponent<PlayerData>().getZombiesKilled().ToString();
     }
 }
