@@ -10,18 +10,18 @@ public class ZombieController : MonoBehaviour
     NavMeshAgent agent;
     Animator animator;
     Transform target;
-    private float health;
+    float health;
     float distanceToPlayer;
     bool targetInSight;
     bool targetInRange;
-    bool canAttack;
+    bool attackStarted;
+    float attackEndTime;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         target = PlayerManager.instance.player.transform;
-        canAttack = true;
         health = enemyData.health;
         setNavMeshStats();
     }
@@ -50,28 +50,38 @@ public class ZombieController : MonoBehaviour
             {
                 ChasePlayer();
             }
-            else if (targetInSight && targetInRange) Attack();
+            else if (targetInSight && targetInRange)
+            {
+                Attack();
+            }
         }
     }
 
-    public void ChasePlayer()
+    void ChasePlayer()
     {
+        agent.SetDestination(target.position);
         animator.SetBool("CHASING", true);
         animator.SetBool("ATTACKING", false);
-        agent.SetDestination(target.position);
+        attackStarted = false;
     }
 
-    public void Attack()
+    void Attack()
     {
-        FaceTarget();
-        animator.SetBool("ATTACKING", true);
-        if (canAttack)
+        if (attackStarted == false)
         {
-            //Attack, apply damage to player.
-            target.GetComponent<PlayerData>().takeDamage(enemyData.damage);
-            canAttack = false;
-            Invoke(nameof(ResetAttack), enemyData.timeBetweenAttacks);
+            attackStarted = true;
+            animator.SetBool("ATTACKING", true);
+            attackEndTime = Time.time + enemyData.attackDuration;
         }
+        else
+        {
+            if (Time.time > attackEndTime)
+            {
+                target.GetComponent<PlayerData>().takeDamage(enemyData.damage);
+                attackStarted=false;
+            }
+        }
+        FaceTarget();
     }
     void FaceTarget()
     {
@@ -81,13 +91,6 @@ public class ZombieController : MonoBehaviour
             Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
             transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
         }
-    }
-
-    void ResetAttack()
-    {
-        if(!targetInRange)
-            animator.SetBool("ATTACKING", false);
-        canAttack = true;
     }
 
     public void TakeDamage(float damage)
@@ -113,7 +116,6 @@ public class ZombieController : MonoBehaviour
             animator.SetTrigger("DEATHBACKWARD");
         Destroy(gameObject, 6f);    //destroy the zombie after 6 seconds.
     }
-
     public float GetHealth()
     {
         return health;

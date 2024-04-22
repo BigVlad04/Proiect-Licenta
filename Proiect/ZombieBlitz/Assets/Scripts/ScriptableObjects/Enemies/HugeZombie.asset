@@ -17,7 +17,7 @@ MonoBehaviour:
   damage: 15
   detectionRange: 10
   attackRange: 3
-  timeBetweenAttacks: 1
+  attackDuration: 1.6
   speed: 6
   angularSpeed: 400
   acceleration: 15

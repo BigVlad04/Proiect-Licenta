@@ -17343,6 +17343,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7554044881856499411, guid: fdaf538087cf95d48bf1f317b84093aa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17937,6 +17941,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigZombie
       objectReference: {fileID: 0}
+    - target: {fileID: 3141507966391168399, guid: 084eead80ff9f47409c12aa42faeb4b3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3312694589624810568, guid: 084eead80ff9f47409c12aa42faeb4b3, type: 3}
       propertyPath: m_WarningMessage
       value: "\nBinding warning: Some generic clip(s) animate transforms that are
@@ -18191,6 +18199,10 @@ PrefabInstance:
     - target: {fileID: 46692208045800979, guid: edf43887bd835ba42893a7b40a833118, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 46692208045800979, guid: edf43887bd835ba42893a7b40a833118, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 52252983510009691, guid: edf43887bd835ba42893a7b40a833118, type: 3}
       propertyPath: m_Layer
@@ -23511,6 +23523,10 @@ PrefabInstance:
     - target: {fileID: 2558657541086251596, guid: 5e152417f25ce54428a399a4e15135fa, type: 3}
       propertyPath: m_Name
       value: HugeZombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558657541086251596, guid: 5e152417f25ce54428a399a4e15135fa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3391348195034350711, guid: 5e152417f25ce54428a399a4e15135fa, type: 3}
       propertyPath: m_LocalPosition.x

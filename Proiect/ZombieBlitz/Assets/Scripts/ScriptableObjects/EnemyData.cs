@@ -11,7 +11,7 @@ public class EnemyData : ScriptableObject
     public float damage;
     public float detectionRange;
     public float attackRange;
-    public float timeBetweenAttacks;
+    public float attackDuration;
 
     //NavMesh properties
     public float speed;
