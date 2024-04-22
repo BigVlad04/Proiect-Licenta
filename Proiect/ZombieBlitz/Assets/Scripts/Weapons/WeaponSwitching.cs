@@ -79,10 +79,8 @@ public class WeaponSwitching : MonoBehaviour
         }
     }
 
-    public enum weaponsEnum{ 
-        PISTOL,
-        AK47,
-        SHOTGUN,
-        SNIPER
+    public weaponsEnum getSelectedWeapon()
+    {
+        return selectedWeapon;
     }
 }

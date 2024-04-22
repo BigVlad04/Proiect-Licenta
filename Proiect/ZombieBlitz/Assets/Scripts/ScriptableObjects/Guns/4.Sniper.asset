@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 231f509e370c93541b3ac2c011c1522e, type: 3}
-  m_Name: Shotgun
+  m_Name: 4.Sniper
   m_EditorClassIdentifier: 
-  weaponName: Shotgun
-  damage: 80
-  range: 10
-  magazineSize: 6
-  currentAmmo: 5
-  fireRate: 1
+  weaponName: Sniper
+  damage: 140
+  range: 200
+  magazineSize: 5
+  currentAmmo: 3
+  fireRate: 0.8
   reloadTime: 4
   isAutomatic: 0
-  shootingSound: {fileID: 8300000, guid: e18fcaf52ad4c6d47b3f84367c60b32d, type: 3}
-  reloadSound: {fileID: 8300000, guid: 318b3ed379a1fca4ab6d3461e4ecdd68, type: 3}
+  shootingSound: {fileID: 8300000, guid: 68348a29dae665148b996ffd9874fcd3, type: 3}
+  reloadSound: {fileID: 8300000, guid: d426552f685c1b94c923ceb21edec96c, type: 3}
   dryFireSound: {fileID: 8300000, guid: 49f0f8ca109b5af4097e9e7f7be48cf1, type: 3}
   dryFireDuration: 0.5
   reloading: 0
