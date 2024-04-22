@@ -115,6 +115,7 @@ public class ZombieController : MonoBehaviour
         else
             animator.SetTrigger("DEATHBACKWARD");
         Destroy(gameObject, 6f);    //destroy the zombie after 6 seconds.
+        target.GetComponent<PlayerData>().increaseZombieKilled();
     }
     public float GetHealth()
     {

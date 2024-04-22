@@ -6,6 +6,7 @@ public class PlayerData : MonoBehaviour
 {
     float startHealth= 100;
     float currentHealth;
+    int zombiesKilled= 0;
     void Start()
     {
         currentHealth= startHealth;
@@ -28,5 +29,14 @@ public class PlayerData : MonoBehaviour
         Debug.Log("You Died!");
         UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
+    }
+
+    public int getZombiesKilled()
+    {
+        return zombiesKilled;
+    }
+    public void increaseZombieKilled()
+    {
+        zombiesKilled++;
     }
 }
