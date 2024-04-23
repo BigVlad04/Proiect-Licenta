@@ -1,39 +1,47 @@
 using TMPro;
 using UnityEngine;
-
+/// <summary>
+/// This script displays the ammo of the currently equiped weapon
+/// </summary>
 public class BulletsText : MonoBehaviour
 {
     public TextMeshProUGUI bulletsText;
     public GameObject weaponHolder;
-    public weaponsEnum weapon;
+    public weaponsEnum weapon;  //currently equiped weapon
+
+    //data about each gun
     GunData pistolData;
     GunData AKData;
     GunData ShotgunData;
     GunData SniperData;
     void Start()
     {
-        GunData[] guns = new GunData[4];
+        getGunsData();
+    }
+
+    void getGunsData() 
+    {
+        GunData[] guns;
         guns = Resources.FindObjectsOfTypeAll<GunData>();
         foreach (GunData gun in guns)
         {
             if (gun.weaponName.Equals("Pistol"))
             {
-                pistolData=gun;
+                pistolData = gun;
             }
             if (gun.weaponName.Equals("AK47"))
             {
-                AKData=gun;
+                AKData = gun;
             }
             if (gun.weaponName.Equals("Shotgun"))
             {
-                ShotgunData=gun;
+                ShotgunData = gun;
             }
             if (gun.weaponName.Equals("Sniper"))
             {
-                SniperData=gun;
+                SniperData = gun;
             }
         }
-        
     }
 
     void Update()

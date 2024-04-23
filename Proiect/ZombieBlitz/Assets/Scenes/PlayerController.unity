@@ -11507,7 +11507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Allzombies: {fileID: 1762541272}
-  zombiesText: {fileID: 989176949}
+  zombiesLeftText: {fileID: 989176949}
 --- !u!1 &1014102825
 GameObject:
   m_ObjectHideFlags: 0

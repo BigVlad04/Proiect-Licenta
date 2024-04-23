@@ -1,7 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+/// <summary>
+/// This script displays the health bar
+/// </summary>
 
 public class HealthBar : MonoBehaviour
 {
@@ -11,7 +12,6 @@ public class HealthBar : MonoBehaviour
 
     void Update()
     {
-        health = player.GetComponent<PlayerData>().getHealth();
-        healthbar.value = health;
+        healthbar.value = player.GetComponent<PlayerData>().getHealth();
     }
 }

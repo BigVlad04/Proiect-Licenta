@@ -1,6 +1,8 @@
 using TMPro;
 using UnityEngine;
-
+/// <summary>
+/// Display how many zombies the player has killed so far
+/// </summary>
 public class ZombiesKilled : MonoBehaviour
 {
     public GameObject player;
