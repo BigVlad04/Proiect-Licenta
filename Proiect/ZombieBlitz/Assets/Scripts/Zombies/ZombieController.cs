@@ -16,6 +16,7 @@ public class ZombieController : MonoBehaviour
     bool targetInRange;
     bool attackStarted;
     float attackEndTime;
+    bool isAlive;
 
     void Start()
     {
@@ -23,6 +24,7 @@ public class ZombieController : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         target = PlayerManager.instance.player.transform;
         health = enemyData.health;
+        isAlive = true;
         setNavMeshStats();
     }
 
@@ -98,7 +100,12 @@ public class ZombieController : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
-            Death();
+            if (isAlive)    //the zombie is only deleted a few seconds after health reaches 0, time in which the player can still shoot the zombie, so we need isAlive to make sure we only call Death() once
+            {
+                Death();
+                isAlive = false;
+            }
+
         }
     }
 

@@ -5501,7 +5501,7 @@ MonoBehaviour:
   movementSpeed: 7
   gravity: -20
   groundChecker: {fileID: 1079735591}
-  groundCheckRadius: 0.4
+  groundCheckRadius: 0.1
   Ground:
     serializedVersion: 2
     m_Bits: 8
