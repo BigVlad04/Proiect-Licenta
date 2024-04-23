@@ -48,7 +48,7 @@ Animator:
   m_GameObject: {fileID: 46692208045800979}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: c0f1eb7f241f6c546ababd89f4797c80, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8949d9a1acac5a345bb8fc8501d8b7f2, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -94,7 +94,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: 274b8673cc56dc74fa5134a11a6c804f, type: 2}
-  health: 0
 --- !u!1 &52252983510009691
 GameObject:
   m_ObjectHideFlags: 0
