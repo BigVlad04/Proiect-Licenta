@@ -1,23 +1,26 @@
 using System.Collections;
 using UnityEngine;
-
+/// <summary>
+/// this script makes zombie waves appear at set time intervals.
+/// </summary>
 public class WaveSpawner : MonoBehaviour
 {
+
+    //maybe make endless gamemode where waves are generated automatically forever
     public enum WaveSpawnerState
     {
         COUNTDOWN,      //counting down until the start of the next wave
         SPAWNING,       //spawning enemies
         WAITING         //waiting for the end of the current wave
     };
-
+    //maybe make the script spawn zombies without waiting for the player to kill off current zombies.
     public Wave[] waves;
     public Transform[] spawnPoints;
+    public GameObject allZombies;   //used for counting the number of remaining zombies and is also a parent object to all the zombies that will spawn
     int nextWave = 0;
     public float timeBetweenWaves;
     public float timeUntilNextWave;
     WaveSpawnerState state=WaveSpawnerState.COUNTDOWN;
-
-    public GameObject allZombies;
 
     void Start()
     {
@@ -30,7 +33,7 @@ public class WaveSpawner : MonoBehaviour
         {
             if(AreEnemiesAlive())
             {
-                return;
+                return;     //wait for the player to kill all zombies before starting next wave
             }
             else
             {
@@ -52,13 +55,13 @@ public class WaveSpawner : MonoBehaviour
 
     IEnumerator SpawnWave(Wave wave)
     {
-        Debug.Log("Starting new wave");
+        Debug.Log("Starting wave " + (nextWave+1));
         state = WaveSpawnerState.SPAWNING;
-        for(int i=0; i<wave.enemyTypes.Length;i++)
+        for(int i=0; i<wave.zombieTypes.Length;i++)      //for each zombie type
         {
-            for (int j = 0; j < wave.numberOfEnemies[i]; j++)
+            for (int j = 0; j < wave.numberOfZombies[i]; j++)       //spawn the corresponding zombie 
             {
-                SpawnZombie(wave.enemyTypes[i]);
+                SpawnZombie(wave.zombieTypes[i]);
                 yield return new WaitForSeconds(1f / wave.spawnRate);
             }
         }
@@ -73,7 +76,7 @@ public class WaveSpawner : MonoBehaviour
         timeUntilNextWave = timeBetweenWaves;
         if (nextWave > waves.Length - 1)
         {
-            Debug.Log("Completed all waves! Starting over...");
+            Debug.Log("Completed all waves! Starting over...");     //maybe add winning screen
             nextWave = 0;
         }
     }
