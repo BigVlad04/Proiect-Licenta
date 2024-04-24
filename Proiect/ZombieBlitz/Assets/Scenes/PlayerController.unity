@@ -11692,14 +11692,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - waveName: Wave1
-    enemy: {fileID: 554608553154862925, guid: fdaf538087cf95d48bf1f317b84093aa, type: 3}
-    count: 5
+    enemyTypes:
+    - {fileID: 554608553154862925, guid: fdaf538087cf95d48bf1f317b84093aa, type: 3}
+    - {fileID: 2555274595672811648, guid: edf43887bd835ba42893a7b40a833118, type: 3}
+    - {fileID: 6501153477917122797, guid: 084eead80ff9f47409c12aa42faeb4b3, type: 3}
+    - {fileID: 3391348195034350711, guid: 5e152417f25ce54428a399a4e15135fa, type: 3}
+    numberOfEnemies: 02000000010000000000000000000000
+    spawnRate: 2
+  - waveName: Wave2
+    enemyTypes:
+    - {fileID: 554608553154862925, guid: fdaf538087cf95d48bf1f317b84093aa, type: 3}
+    - {fileID: 2555274595672811648, guid: edf43887bd835ba42893a7b40a833118, type: 3}
+    - {fileID: 6501153477917122797, guid: 084eead80ff9f47409c12aa42faeb4b3, type: 3}
+    - {fileID: 3391348195034350711, guid: 5e152417f25ce54428a399a4e15135fa, type: 3}
+    numberOfEnemies: 00000000020000000200000002000000
     spawnRate: 2
   spawnPoints:
   - {fileID: 233874541}
   - {fileID: 1364316620}
   - {fileID: 750327406}
-  timeBetweenWaves: 3
+  timeBetweenWaves: 5
   timeUntilNextWave: 0
   allZombies: {fileID: 1762541272}
 --- !u!1 &1183260466

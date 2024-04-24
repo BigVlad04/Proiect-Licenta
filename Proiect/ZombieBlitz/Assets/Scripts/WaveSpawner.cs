@@ -5,9 +5,9 @@ public class WaveSpawner : MonoBehaviour
 {
     public enum WaveSpawnerState
     {
-        COUNTDOWN,
-        SPAWNING,
-        WAITING
+        COUNTDOWN,      //counting down until the start of the next wave
+        SPAWNING,       //spawning enemies
+        WAITING         //waiting for the end of the current wave
     };
 
     public Wave[] waves;
@@ -54,16 +54,16 @@ public class WaveSpawner : MonoBehaviour
     {
         Debug.Log("Starting new wave");
         state = WaveSpawnerState.SPAWNING;
-
-        for(int i=0; i<wave.count; i++)
+        for(int i=0; i<wave.enemyTypes.Length;i++)
         {
-            SpawnZombie(wave.enemy);
-            yield return new WaitForSeconds(1f / wave.spawnRate);
+            for (int j = 0; j < wave.numberOfEnemies[i]; j++)
+            {
+                SpawnZombie(wave.enemyTypes[i]);
+                yield return new WaitForSeconds(1f / wave.spawnRate);
+            }
         }
-
         state = WaveSpawnerState.WAITING;
         yield break;
-
     }
 
     void WaveCompleted() {
