@@ -11435,6 +11435,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363bb18f753861f4e928e4cc09aeab8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waveSpawner: {fileID: 1093040832}
+  waveNumberText: {fileID: 956754432}
 --- !u!1 &989176947
 GameObject:
   m_ObjectHideFlags: 0

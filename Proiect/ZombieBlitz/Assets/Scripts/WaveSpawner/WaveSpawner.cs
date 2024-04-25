@@ -94,4 +94,9 @@ public class WaveSpawner : MonoBehaviour
         Transform spawnpoint = spawnPoints[Random.Range(0,spawnPoints.Length)];
         Instantiate(zombie, spawnpoint.transform.position,spawnpoint.transform.rotation,allZombies.transform);
     }
+
+    public int getWaveNumber()
+    {
+        return nextWave +1;
+    }
 }
