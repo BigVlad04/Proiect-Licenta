@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 /// <summary>
@@ -38,10 +37,33 @@ public class ZombieController : MonoBehaviour
 
     void Update()
     {
+        BehaviourAlwaysChase();
+        //BehaviourChaseWhenPlayerInSight();
+    }
+
+    void BehaviourAlwaysChase()     //zombies always chase the player
+    {
+        distanceToPlayer = Vector3.Distance(transform.position, target.position);
+        targetInRange = (distanceToPlayer <= enemyData.attackRange);
+        if (health > 0)
+        {
+            if (!targetInRange)
+            {
+                ChasePlayer();
+            }
+            else
+            {
+                Attack();
+            }
+        }
+    }
+
+    void BehaviourChaseWhenPlayerInSight()      //zombies chase only when the player is within a certain distance
+    {
         distanceToPlayer = Vector3.Distance(transform.position, target.position);
         targetInSight = (distanceToPlayer <= enemyData.detectionRange);
         targetInRange = (distanceToPlayer <= enemyData.attackRange);
-        if(health > 0)
+        if (health > 0)
         {
             if (!targetInSight && !targetInRange)       //this will be disabled in the final game, the zombies will always chase the player
             {
@@ -85,6 +107,7 @@ public class ZombieController : MonoBehaviour
         }
         FaceTarget();
     }
+
     void FaceTarget()
     {
         if(health > 0)      //won't face target while dead
@@ -124,6 +147,7 @@ public class ZombieController : MonoBehaviour
         Destroy(gameObject, 6f);    //destroy the zombie after 6 seconds.
         target.GetComponent<PlayerData>().increaseZombieKilled();
     }
+
     public float GetHealth()
     {
         return health;
