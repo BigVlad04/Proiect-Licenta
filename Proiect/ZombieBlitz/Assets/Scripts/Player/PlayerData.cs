@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerData : MonoBehaviour
 {
@@ -27,8 +26,9 @@ public class PlayerData : MonoBehaviour
     }
     void Die() {
         Debug.Log("You Died!");
-        UnityEditor.EditorApplication.isPlaying = false;
-        Application.Quit();
+        FindObjectOfType<GameManager>().GameOver();
+        /*UnityEditor.EditorApplication.isPlaying = false;
+        Application.Quit();*/
     }
 
     public int getZombiesKilled()
