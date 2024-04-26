@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerData : MonoBehaviour
 {
-    float startHealth= 100;
+    float startHealth= 10;
     float currentHealth;
     int zombiesKilled= 0;
     void Start()
@@ -27,6 +27,8 @@ public class PlayerData : MonoBehaviour
     void Die() {
         Debug.Log("You Died!");
         FindObjectOfType<GameManager>().GameOver();
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
         /*UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();*/
     }
