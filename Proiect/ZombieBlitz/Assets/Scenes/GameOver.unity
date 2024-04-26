@@ -938,6 +938,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7045d6432834f81488794977f51f7aa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wavesSurvived: {fileID: 996847461}
+  zombiesKilled: {fileID: 1437301133}
 --- !u!1 &1437301131
 GameObject:
   m_ObjectHideFlags: 0

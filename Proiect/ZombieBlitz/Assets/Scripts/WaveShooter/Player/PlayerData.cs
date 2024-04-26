@@ -27,10 +27,6 @@ public class PlayerData : MonoBehaviour
     void Die() {
         Debug.Log("You Died!");
         FindObjectOfType<GameManager>().GameOver();
-        Cursor.lockState = CursorLockMode.Confined;
-        Cursor.visible = true;
-        /*UnityEditor.EditorApplication.isPlaying = false;
-        Application.Quit();*/
     }
 
     public int getZombiesKilled()

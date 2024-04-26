@@ -1,8 +1,17 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameOverMenu : MonoBehaviour
 {
+    
+    public TextMeshProUGUI wavesSurvived;
+    public TextMeshProUGUI zombiesKilled;
+    public void Start()
+    {
+        wavesSurvived.text = "You survived for " + StaticValues.wavesSurvived + " waves";
+        zombiesKilled.text = "Zombies Killed : " + StaticValues.zombiesKilled;
+    }
     public void PlayAgain() 
     {
         SceneManager.LoadScene("WaveShooter");
