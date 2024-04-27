@@ -76,8 +76,7 @@ public class WaveSpawner : MonoBehaviour
         timeUntilNextWave = timeBetweenWaves;
         if (nextWave > waves.Length - 1)
         {
-            Debug.Log("Completed all waves! Starting over...");     //maybe add winning screen
-            nextWave = 0;
+            FindAnyObjectByType<GameManager>().GameWon();
         }
     }
 

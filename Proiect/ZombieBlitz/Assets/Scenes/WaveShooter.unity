@@ -11725,21 +11725,6 @@ MonoBehaviour:
     - {fileID: 2555274595672811648, guid: edf43887bd835ba42893a7b40a833118, type: 3}
     numberOfZombies: 0500000003000000
     spawnRate: 2
-  - waveName: Wave2
-    zombieTypes:
-    - {fileID: 554608553154862925, guid: fdaf538087cf95d48bf1f317b84093aa, type: 3}
-    - {fileID: 2555274595672811648, guid: edf43887bd835ba42893a7b40a833118, type: 3}
-    - {fileID: 6501153477917122797, guid: 084eead80ff9f47409c12aa42faeb4b3, type: 3}
-    numberOfZombies: 080000000500000004000000
-    spawnRate: 2
-  - waveName: Wave3
-    zombieTypes:
-    - {fileID: 554608553154862925, guid: fdaf538087cf95d48bf1f317b84093aa, type: 3}
-    - {fileID: 2555274595672811648, guid: edf43887bd835ba42893a7b40a833118, type: 3}
-    - {fileID: 6501153477917122797, guid: 084eead80ff9f47409c12aa42faeb4b3, type: 3}
-    - {fileID: 3391348195034350711, guid: 5e152417f25ce54428a399a4e15135fa, type: 3}
-    numberOfZombies: 0f0000000a0000000600000002000000
-    spawnRate: 2
   spawnPoints:
   - {fileID: 233874541}
   - {fileID: 1364316620}

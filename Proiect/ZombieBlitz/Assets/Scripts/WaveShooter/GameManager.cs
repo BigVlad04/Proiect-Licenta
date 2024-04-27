@@ -11,4 +11,12 @@ public class GameManager : MonoBehaviour
         StaticValues.zombiesKilled = FindAnyObjectByType<PlayerData>().getZombiesKilled();
         SceneManager.LoadScene("GameOver");
     }
+
+    public void GameWon() 
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
+        StaticValues.zombiesKilled = FindAnyObjectByType<PlayerData>().getZombiesKilled();
+        SceneManager.LoadScene("WinScreen");
+    }
 }
