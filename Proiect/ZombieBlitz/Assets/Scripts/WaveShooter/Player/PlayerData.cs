@@ -6,6 +6,7 @@ public class PlayerData : MonoBehaviour
     float startHealth= 10;
     float currentHealth;
     int zombiesKilled= 0;
+    bool playerAlive = true;
     void Start()
     {
         currentHealth= startHealth;
@@ -26,7 +27,11 @@ public class PlayerData : MonoBehaviour
     }
     void Die() {
         Debug.Log("You Died!");
-        FindObjectOfType<GameManager>().GameOver();
+        if(playerAlive)
+        {
+            playerAlive = false;
+            StartCoroutine(FindObjectOfType<GameManager>().GameOver());
+        }
     }
 
     public int getZombiesKilled()

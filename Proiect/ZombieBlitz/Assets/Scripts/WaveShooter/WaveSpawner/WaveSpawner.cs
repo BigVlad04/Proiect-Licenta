@@ -24,7 +24,7 @@ public class WaveSpawner : MonoBehaviour
 
     void Start()
     {
-        timeUntilNextWave = 5;
+        timeUntilNextWave = 6;
     }
 
     void Update()
@@ -76,7 +76,7 @@ public class WaveSpawner : MonoBehaviour
         timeUntilNextWave = timeBetweenWaves;
         if (nextWave > waves.Length - 1)
         {
-            FindAnyObjectByType<GameManager>().GameWon();
+            StartCoroutine(FindAnyObjectByType<GameManager>().GameWon());
         }
     }
 
