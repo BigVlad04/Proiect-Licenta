@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 /// <summary>
 /// This script handles player movement
@@ -40,6 +41,10 @@ public class PlayerMovement: MonoBehaviour
             velocity.y = 0f;
         }
         CheckInput();
+        if(horizontalInput != 0 || verticalInput != 0)
+        {
+            StartCoroutine(gameObject.GetComponent<PlayerSounds>().footstepSound());
+        }
         movementDirection = PlayerBody.forward * verticalInput + PlayerBody.right * horizontalInput;
         characterController.Move(movementDirection * movementSpeed * Time.deltaTime);
         velocity.y += gravity * Time.deltaTime;
