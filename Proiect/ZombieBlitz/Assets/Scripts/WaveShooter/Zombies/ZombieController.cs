@@ -121,6 +121,7 @@ public class ZombieController : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health -= damage;
+        gameObject.GetComponent<ZombieSounds>().playZombieHitSound();
         if (health <= 0)
         {
             if (isAlive)    //the zombie is only deleted a few seconds after health reaches 0, time in which the player can still shoot the zombie, so we need isAlive to make sure we only call Death() once
