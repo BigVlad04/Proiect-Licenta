@@ -5,6 +5,8 @@ public class PlayerSounds : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip[] footstepSounds;
+    public AudioClip playerHit;
+    public AudioClip[] hurtSound;
     bool soundPlaying = false;
     // Start is called before the first frame update
     void Start()
@@ -18,12 +20,21 @@ public class PlayerSounds : MonoBehaviour
         
     }
 
+    public void playerHitSound()
+    {
+        audioSource.PlayOneShot(playerHit);
+        if(Random.value > 0.5f)
+        {
+            audioSource.PlayOneShot(hurtSound[Random.Range(0, hurtSound.Length)]);
+        }
+    }
+
     public IEnumerator footstepSound()
     {
         if (!soundPlaying)
         {
             soundPlaying = true;
-            AudioClip footstepSound = footstepSounds[Random.RandomRange(0, footstepSounds.Length)];
+            AudioClip footstepSound = footstepSounds[Random.Range(0, footstepSounds.Length)];
             audioSource.volume = .3f;
             audioSource.pitch = Random.Range(0.8f, 1f);
             audioSource.PlayOneShot(footstepSound);

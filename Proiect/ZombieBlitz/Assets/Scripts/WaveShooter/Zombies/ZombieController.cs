@@ -86,6 +86,7 @@ public class ZombieController : MonoBehaviour
         agent.SetDestination(target.position);
         animator.SetBool("CHASING", true);
         animator.SetBool("ATTACKING", false);
+        StartCoroutine(GetComponent<ZombieSounds>().footstepSound());
         attackStarted = false;
     }
 

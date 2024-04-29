@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerData : MonoBehaviour
 {
-    float startHealth= 10;
+    float startHealth= 100;
     float currentHealth;
     int zombiesKilled= 0;
     bool playerAlive = true;
@@ -18,6 +18,7 @@ public class PlayerData : MonoBehaviour
     }
     public void takeDamage(float damage)
     {
+        gameObject.GetComponent<PlayerSounds>().playerHitSound();
         currentHealth -= damage;
         Debug.Log("You took " + damage + " damage. Health remaining: " + currentHealth);
         if (currentHealth < 0)

@@ -5473,10 +5473,10 @@ GameObject:
   m_Component:
   - component: {fileID: 443948839}
   - component: {fileID: 443948838}
-  - component: {fileID: 443948840}
-  - component: {fileID: 443948843}
-  - component: {fileID: 443948841}
   - component: {fileID: 443948842}
+  - component: {fileID: 443948840}
+  - component: {fileID: 443948841}
+  - component: {fileID: 443948843}
   m_Layer: 6
   m_Name: FirstPersonPlayer
   m_TagString: Untagged
@@ -5679,6 +5679,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 43e8fb9bb636b6649b610ec2a347300a, type: 3}
   - {fileID: 8300000, guid: cc21ecdf1b3f71c4cbea0e712143bca5, type: 3}
   - {fileID: 8300000, guid: 66b2cfae741fd4a48bee044db803eab8, type: 3}
+  playerHit: {fileID: 8300000, guid: 886e65fe1b95cc14ea7fee5ba0bd2ce2, type: 3}
+  hurtSound:
+  - {fileID: 8300000, guid: 12a28775046922e4a9539db84bf7f71d, type: 3}
+  - {fileID: 8300000, guid: c7e95ac6038ae6f4f8a77227f4ecd44c, type: 3}
+  - {fileID: 8300000, guid: d12fdb4788f383b4ba9e9256377414d6, type: 3}
 --- !u!1 &488644453
 GameObject:
   m_ObjectHideFlags: 0

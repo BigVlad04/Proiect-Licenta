@@ -6,6 +6,8 @@ public class ZombieSounds : MonoBehaviour
 {
     AudioSource audioSource;
     public AudioClip[] zombieHitSound;
+    public AudioClip zombieFootstep;
+    bool footstepSoundPlaying = false;
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -20,5 +22,22 @@ public class ZombieSounds : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public IEnumerator footstepSound()
+    {
+        if (!footstepSoundPlaying)
+        {
+            footstepSoundPlaying = true;
+            audioSource.volume = .5f;
+            audioSource.pitch = Random.Range(0.8f, 1f);
+            audioSource.PlayOneShot(zombieFootstep);
+            yield return new WaitForSeconds(zombieFootstep.length);
+            footstepSoundPlaying = false;
+        }
+        else
+        {
+            yield return null;
+        }
     }
 }

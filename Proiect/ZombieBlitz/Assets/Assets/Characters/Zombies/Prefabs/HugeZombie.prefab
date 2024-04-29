@@ -933,6 +933,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 34bab6cfbce0d6445ac13550cf03437e, type: 3}
   - {fileID: 8300000, guid: ba17528e8c26e0947919be6342fd6ad9, type: 3}
   - {fileID: 8300000, guid: b04be549fe8cab0438546d8cc6ceab1b, type: 3}
+  zombieFootstep: {fileID: 8300000, guid: fd1f2f631342b9041a95ae93f596ab72, type: 3}
 --- !u!1 &2682067404312457290
 GameObject:
   m_ObjectHideFlags: 0
