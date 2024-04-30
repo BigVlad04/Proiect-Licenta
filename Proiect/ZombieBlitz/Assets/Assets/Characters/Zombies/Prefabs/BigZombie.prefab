@@ -1185,7 +1185,13 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 34bab6cfbce0d6445ac13550cf03437e, type: 3}
   - {fileID: 8300000, guid: ba17528e8c26e0947919be6342fd6ad9, type: 3}
   - {fileID: 8300000, guid: b04be549fe8cab0438546d8cc6ceab1b, type: 3}
-  zombieFootstep: {fileID: 8300000, guid: fd1f2f631342b9041a95ae93f596ab72, type: 3}
+  zombieFootstepSound:
+  - {fileID: 8300000, guid: 096b43ae05fa10d49acb560e7bb85924, type: 3}
+  - {fileID: 8300000, guid: fd1f2f631342b9041a95ae93f596ab72, type: 3}
+  growlSound:
+  - {fileID: 8300000, guid: 1821417f9b358764ab02fd5fd4900290, type: 3}
+  timeBetweenGrowls: 2
+  growlProbability: 0.3
 --- !u!1 &3240155778509441076
 GameObject:
   m_ObjectHideFlags: 0
