@@ -35,7 +35,7 @@ public class PlayerSounds : MonoBehaviour
         {
             soundPlaying = true;
             AudioClip footstepSound = footstepSounds[Random.Range(0, footstepSounds.Length)];
-            audioSource.volume = .3f;
+            audioSource.volume = .7f;
             audioSource.pitch = Random.Range(0.8f, 1f);
             audioSource.PlayOneShot(footstepSound);
             yield return new WaitForSeconds(footstepSound.length);
