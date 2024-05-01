@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+/// <summary>
+/// This script manages information about the player
+/// </summary>
 public class PlayerData : MonoBehaviour
 {
     float startHealth= 100;
@@ -12,33 +14,34 @@ public class PlayerData : MonoBehaviour
         currentHealth= startHealth;
     }
 
-    public float getHealth() 
-    { 
-        return currentHealth;
-    }
     public void takeDamage(float damage)
     {
         gameObject.GetComponent<PlayerSounds>().playerHitSound();
         currentHealth -= damage;
-        Debug.Log("You took " + damage + " damage. Health remaining: " + currentHealth);
         if (currentHealth < 0)
         {
             Die();
         }
     }
+
     void Die() {
-        Debug.Log("You Died!");
-        if(playerAlive)
+        if(playerAlive)     //this is to make sure we don't call GameOver more than once.
         {
             playerAlive = false;
             StartCoroutine(FindObjectOfType<GameManager>().GameOver());
         }
     }
 
+    public float getHealth()
+    {
+        return currentHealth;
+    }
+
     public int getZombiesKilled()
     {
         return zombiesKilled;
     }
+
     public void increaseZombieKilled()
     {
         zombiesKilled++;

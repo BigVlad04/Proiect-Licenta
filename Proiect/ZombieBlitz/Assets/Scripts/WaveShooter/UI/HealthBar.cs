@@ -8,7 +8,6 @@ public class HealthBar : MonoBehaviour
 {
     public GameObject player;
     public Slider healthbar;
-    float health;
 
     void Update()
     {

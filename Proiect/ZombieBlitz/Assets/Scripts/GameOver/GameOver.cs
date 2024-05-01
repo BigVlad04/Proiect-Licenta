@@ -1,7 +1,9 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+/// <summary>
+/// This script runs when the game over screen is displayed.
+/// </summary>
 public class GameOverMenu : MonoBehaviour
 {
     

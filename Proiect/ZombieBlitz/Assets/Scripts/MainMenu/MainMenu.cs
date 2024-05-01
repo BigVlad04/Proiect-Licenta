@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+/// <summary>
+/// This script is run in the main menu
+/// </summary>
 public class MainMenu : MonoBehaviour
 {
     public void PlayGame() 
@@ -10,7 +12,6 @@ public class MainMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        Debug.Log("QuitGame!");
         Application.Quit();
     }
 }
