@@ -11,7 +11,7 @@ public class WinScreen : MonoBehaviour
     }
     public void PlayAgain()
     {
-        SceneManager.LoadScene("WaveShooter");
+        SceneManager.LoadScene("ZombieBlitz");
     }
 
     public void BackToMenu()

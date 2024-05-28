@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame() 
     {
-        SceneManager.LoadScene("WaveShooter");
+        SceneManager.LoadScene("ZombieBlitz");
     }
 
     public void QuitGame()

@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: c43942f6feed1a04d83eeb154b1f9fe0
   - enabled: 1
-    path: Assets/Scenes/WaveShooter.unity
-    guid: 25d42c637ec560e4f851c31c00c7ade0
+    path: Assets/Scenes/ZombieBlitz.unity
+    guid: 9dc92d75bac8afd46a8643c98a76e178
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 24d0344600b60224caca2c5efdf0e4a7

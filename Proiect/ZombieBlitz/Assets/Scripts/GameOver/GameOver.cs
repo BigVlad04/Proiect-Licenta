@@ -16,7 +16,7 @@ public class GameOverMenu : MonoBehaviour
     }
     public void PlayAgain() 
     {
-        SceneManager.LoadScene("WaveShooter");
+        SceneManager.LoadScene("ZombieBlitz");
     }
 
     public void BackToMenu() 
