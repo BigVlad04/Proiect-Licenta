@@ -1,12 +1,13 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public AudioMixer audioMixer;
     public GameObject YouDiedText;
     public GameObject YouWinText;
-
 
     public IEnumerator GameOver()
     {
