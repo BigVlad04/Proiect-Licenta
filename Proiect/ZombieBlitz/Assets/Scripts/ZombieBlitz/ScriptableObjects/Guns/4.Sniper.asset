@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: 4.Sniper
   m_EditorClassIdentifier: 
   weaponName: Sniper
-  damage: 140
+  damage: 180
   range: 200
   magazineSize: 5
-  currentAmmo: 3
+  currentAmmo: 0
   fireRate: 0.8
   reloadTime: 4
   isAutomatic: 0

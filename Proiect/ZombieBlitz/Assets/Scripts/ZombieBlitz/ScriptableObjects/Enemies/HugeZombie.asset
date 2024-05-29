@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a01d4adbd7deb343a77c55cedadd056, type: 3}
-  m_Name: WomanZombie
+  m_Name: HugeZombie
   m_EditorClassIdentifier: 
-  zombieName: WomanZombie
-  health: 60
-  damage: 3
-  detectionRange: 15
-  attackRange: 2
-  attackDuration: 1.1
-  speed: 9
-  angularSpeed: 1000
+  zombieName: HugeZombie
+  health: 1500
+  damage: 15
+  detectionRange: 10
+  attackRange: 3
+  attackDuration: 1.6
+  speed: 4
+  angularSpeed: 2000
   acceleration: 15
-  stoppingDistance: 2
+  stoppingDistance: 3

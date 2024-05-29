@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 231f509e370c93541b3ac2c011c1522e, type: 3}
-  m_Name: 3.Shotgun
+  m_Name: 2.AK47
   m_EditorClassIdentifier: 
-  weaponName: Shotgun
-  damage: 80
-  range: 10
-  magazineSize: 6
-  currentAmmo: 5
-  fireRate: 1
-  reloadTime: 4
-  isAutomatic: 0
-  shootingSound: {fileID: 8300000, guid: e18fcaf52ad4c6d47b3f84367c60b32d, type: 3}
-  reloadSound: {fileID: 8300000, guid: 318b3ed379a1fca4ab6d3461e4ecdd68, type: 3}
+  weaponName: AK47
+  damage: 35
+  range: 30
+  magazineSize: 30
+  currentAmmo: 0
+  fireRate: 6
+  reloadTime: 3
+  isAutomatic: 1
+  shootingSound: {fileID: 8300000, guid: 8ed93040bb35c484f935fb6d1fd08e5d, type: 3}
+  reloadSound: {fileID: 8300000, guid: 4258268a33546c2439661c2a099ee39f, type: 3}
   dryFireSound: {fileID: 8300000, guid: 49f0f8ca109b5af4097e9e7f7be48cf1, type: 3}
-  dryFireDuration: 0.5
-  reloading: 0
+  dryFireDuration: 0.3
+  reloading: 1
