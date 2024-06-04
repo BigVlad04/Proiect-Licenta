@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public class StaticValues : MonoBehaviour
 {
     public static int wavesSurvived;

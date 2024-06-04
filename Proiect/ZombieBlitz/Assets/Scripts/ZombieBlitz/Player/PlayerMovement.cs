@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 /// <summary>
 /// This script handles player movement
@@ -33,7 +32,6 @@ public class PlayerMovement: MonoBehaviour
     {
         canJump = true;
     }
-
     void Update()
     {
         isGrounded = Physics.CheckSphere(groundChecker.position,groundCheckRadius,Ground);   //cast an invisible sphere from the player's foot to check if player is on the ground   
@@ -49,9 +47,7 @@ public class PlayerMovement: MonoBehaviour
         characterController.Move(movementDirection * movementSpeed * Time.deltaTime);
         velocity.y += gravity * Time.deltaTime;
         characterController.Move(velocity * Time.deltaTime);
-        
     }
-
     void CheckInput()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
@@ -62,12 +58,10 @@ public class PlayerMovement: MonoBehaviour
             Invoke(nameof(resetJump), jumpCooldown);    //invoke resetJump after jumpCooldown time
         }
     }
-
     void jump() 
     {
         velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
     }
-
     private void resetJump()
     {
         canJump = true;

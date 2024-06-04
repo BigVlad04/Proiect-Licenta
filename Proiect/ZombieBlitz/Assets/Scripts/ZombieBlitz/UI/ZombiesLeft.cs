@@ -12,11 +12,9 @@ public class ZombiesLeft : MonoBehaviour
     {
         zombiesLeftText.text = Allzombies.GetComponent<ZombieCounter>().getZombiesLeft().ToString();
     }
-
     void Update()
     {
         zombiesLeftText.text = Allzombies.GetComponent<ZombieCounter>().getZombiesLeft().ToString();
 
     }
-
 }

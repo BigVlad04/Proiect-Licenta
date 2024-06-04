@@ -26,7 +26,6 @@ public class WaveSpawner : MonoBehaviour
     {
         timeUntilNextWave = 6;
     }
-
     void Update()
     {
         if(state == WaveSpawnerState.WAITING)
@@ -52,7 +51,6 @@ public class WaveSpawner : MonoBehaviour
             timeUntilNextWave -= Time.deltaTime;
         }
     }
-
     IEnumerator SpawnWave(Wave wave)
     {
         Debug.Log("Starting wave " + (nextWave+1));
@@ -68,7 +66,6 @@ public class WaveSpawner : MonoBehaviour
         state = WaveSpawnerState.WAITING;
         yield break;
     }
-
     void WaveCompleted() {
         Debug.Log("Wave completed!");
         nextWave++;
@@ -79,21 +76,18 @@ public class WaveSpawner : MonoBehaviour
             StartCoroutine(FindAnyObjectByType<GameManager>().GameWon());
         }
     }
-
     bool AreEnemiesAlive()
     {
         if(allZombies.GetComponent<ZombieCounter>().getZombiesLeft() > 0)
             return true;
         return false;
     }
-
     void SpawnZombie(Transform zombie)
     {
         Debug.Log("Spawing zombie...");
         Transform spawnpoint = spawnPoints[Random.Range(0,spawnPoints.Length)];
         Instantiate(zombie, spawnpoint.transform.position,spawnpoint.transform.rotation,allZombies.transform);
     }
-
     public int getWaveNumber()
     {
         return nextWave +1;

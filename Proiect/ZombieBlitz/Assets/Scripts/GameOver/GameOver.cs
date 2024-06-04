@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class GameOverMenu : MonoBehaviour
 {
-    
     public TextMeshProUGUI wavesSurvived;
     public TextMeshProUGUI zombiesKilled;
     public void Start()
@@ -18,7 +17,6 @@ public class GameOverMenu : MonoBehaviour
     {
         SceneManager.LoadScene("ZombieBlitz");
     }
-
     public void BackToMenu() 
     {
         SceneManager.LoadScene("MainMenu");

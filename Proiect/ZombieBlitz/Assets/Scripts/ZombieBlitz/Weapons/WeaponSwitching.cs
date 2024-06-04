@@ -14,7 +14,6 @@ public class WeaponSwitching : MonoBehaviour
         selectedWeapon = weaponsEnum.PISTOL;    //initially the pistol is equiped
         SelectWeapon();
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -37,7 +36,6 @@ public class WeaponSwitching : MonoBehaviour
             }
             weaponChanged = true;
         }
-
         //switching through numpad keys
         if (Input.GetKey(KeyCode.Alpha1) && selectedWeapon != weaponsEnum.PISTOL)
         {
@@ -63,7 +61,6 @@ public class WeaponSwitching : MonoBehaviour
             SelectWeapon();
         }
     }
-
     void SelectWeapon() {
         weaponsEnum gun = weaponsEnum.PISTOL;
         foreach (Transform weapon in transform) {
@@ -78,7 +75,6 @@ public class WeaponSwitching : MonoBehaviour
                 gun++;
         }
     }
-
     public weaponsEnum getSelectedWeapon()
     {
         return selectedWeapon;

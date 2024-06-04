@@ -1,6 +1,8 @@
 using System.Collections;
 using UnityEngine;
-
+/// <summary>
+/// this script plays the sounds produced by the player character
+/// </summary>
 public class PlayerSounds : MonoBehaviour
 {
     public AudioSource audioSource;
@@ -13,7 +15,6 @@ public class PlayerSounds : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
     }
-
     public void playerHitSound()
     {
         audioSource.PlayOneShot(playerHit);
@@ -22,7 +23,6 @@ public class PlayerSounds : MonoBehaviour
             audioSource.PlayOneShot(hurtSound[Random.Range(0, hurtSound.Length)]);      //play a random groan sound from the selection
         }
     }
-
     public IEnumerator footstepSound()
     {
         if (!soundPlaying)  //if we're not already playing a footstep sound

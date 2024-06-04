@@ -24,13 +24,11 @@ public class GunScript : MonoBehaviour
         gunAnimator = GetComponent<Animator>();
         gunData.currentAmmo = gunData.magazineSize;
     }
-
     private void OnEnable()
     {
         gunData.reloading = false;
         gunAnimator.SetBool("RELOADING", false);
     }
-
     void Update()
     {
         if (gunData.reloading)
@@ -57,7 +55,6 @@ public class GunScript : MonoBehaviour
             }
         }
     }
-
     void Shoot()
     {
         audioSource.PlayOneShot(gunData.shootingSound);     //fire sound
@@ -67,13 +64,11 @@ public class GunScript : MonoBehaviour
         HandleShot();
         
     }
-
     void HandleShot() 
     {
         RaycastHit hit;
         if (Physics.Raycast(playerCam.transform.position, playerCam.transform.forward, out hit, gunData.range))
         {
-
             ZombieController targetScript = hit.transform.GetComponentInParent<ZombieController>();
             if (targetScript != null)
             {
@@ -97,16 +92,14 @@ public class GunScript : MonoBehaviour
                     Debug.Log(Time.time + " " + hit.transform.name + " " + gunData.damage * 0.75f);     //for debugging purposes
                     targetScript.TakeDamage(gunData.damage * 0.66f);
                 }
-
             }
             HandleImpactEffects(hit);
-
-            /*   if (hit.rigidbody != null) {
-                   hit.rigidbody.AddForce(-hit.normal * gunData.damage);           ---> OPTIONAL: add impact force
-               }*/
+            /*if (hit.rigidbody != null) 
+            {
+                hit.rigidbody.AddForce(-hit.normal * gunData.damage);           ---> OPTIONAL: add impact force
+            }*/
         }
     }
-
     void HandleImpactEffects(RaycastHit hit) {
         if (hit.transform.gameObject.layer != 6)
         {
@@ -114,17 +107,14 @@ public class GunScript : MonoBehaviour
             {
                 GameObject impactPoint = Instantiate(impactEffectZombie, hit.point, Quaternion.LookRotation(hit.normal)); //add bullet hole
                 Destroy(impactPoint, 1f);      //destroy bullet hole
-
             }
             else            //impact effect for environment
             {
                 GameObject impactPoint = Instantiate(impactEffectEnvironment, hit.point, Quaternion.LookRotation(hit.normal)); //add bullet hole
                 Destroy(impactPoint, 3f);      //destroy bullet hole
             }
-
         }
     }
-
     IEnumerator ReloadWeapon()
     {
         gunData.reloading = true;
@@ -137,19 +127,18 @@ public class GunScript : MonoBehaviour
         gunData.reloading = false;
     }
 
-  
-
-    /*bool CheckFireButton() {          //OPTIONAL, if we want to make semi automatic fire
-    if (gunData.isAutomatic == true)
-    {
-        if (Input.GetButton("Fire1"))
-            return true;
-    }
-    else if (gunData.isAutomatic == false) {
-        if (Input.GetButtonDown("Fire1"))
-            return true;
-    }
-    return false;
-}*/
-
+    /*bool CheckFireButton()         //OPTIONAL, if we want to make semi automatic fire 
+    {         
+        if (gunData.isAutomatic == true)
+        {
+            if (Input.GetButton("Fire1"))
+                return true;
+        }
+        else if (gunData.isAutomatic == false) 
+        {
+            if (Input.GetButtonDown("Fire1"))
+                return true;
+        }
+        return false;
+    }*/
 }

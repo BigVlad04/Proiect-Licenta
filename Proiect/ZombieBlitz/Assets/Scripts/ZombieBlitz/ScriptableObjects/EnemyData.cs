@@ -1,6 +1,7 @@
 using UnityEngine;
-
-
+/// <summary>
+/// This scriptable object will store information about each enemy type
+/// </summary>
 [CreateAssetMenu(fileName = "Enemy", menuName = "Enemy/Zombie")]
 public class EnemyData : ScriptableObject
 {

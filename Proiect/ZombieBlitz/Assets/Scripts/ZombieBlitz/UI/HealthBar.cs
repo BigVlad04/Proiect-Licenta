@@ -3,7 +3,6 @@ using UnityEngine.UI;
 /// <summary>
 /// This script displays the health bar
 /// </summary>
-
 public class HealthBar : MonoBehaviour
 {
     public GameObject player;

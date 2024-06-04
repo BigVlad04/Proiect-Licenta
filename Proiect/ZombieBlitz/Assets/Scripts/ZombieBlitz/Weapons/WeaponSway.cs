@@ -13,7 +13,6 @@ public class WeaponSway : MonoBehaviour
     {
         initialPosition = transform.localPosition;
     }
-
     void Update()
     {
         float moveX = -Input.GetAxis("Mouse X") * swayAmount;

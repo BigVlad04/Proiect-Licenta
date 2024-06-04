@@ -9,7 +9,6 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("ZombieBlitz");
     }
-
     public void QuitGame()
     {
         Application.Quit();

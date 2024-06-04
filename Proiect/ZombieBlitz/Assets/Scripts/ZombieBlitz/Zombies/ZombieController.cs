@@ -26,7 +26,6 @@ public class ZombieController : MonoBehaviour
         isAlive = true;
         setNavMeshStats();
     }
-
     void setNavMeshStats()
     {
         agent.speed = enemyData.speed;
@@ -34,13 +33,11 @@ public class ZombieController : MonoBehaviour
         agent.acceleration = enemyData.acceleration;
         agent.stoppingDistance = enemyData.stoppingDistance;
     }
-
     void Update()
     {
         BehaviourAlwaysChase();
         //BehaviourChaseWhenPlayerInSight();
     }
-
     void BehaviourAlwaysChase()     //zombies always chase the player
     {
         distanceToPlayer = Vector3.Distance(transform.position, target.position);
@@ -57,7 +54,6 @@ public class ZombieController : MonoBehaviour
             }
         }
     }
-
     void BehaviourChaseWhenPlayerInSight()      //zombies chase only when the player is within a certain distance
     {
         distanceToPlayer = Vector3.Distance(transform.position, target.position);
@@ -80,7 +76,6 @@ public class ZombieController : MonoBehaviour
             }
         }
     }
-
     void ChasePlayer()
     {
         agent.SetDestination(target.position);
@@ -89,7 +84,6 @@ public class ZombieController : MonoBehaviour
         StartCoroutine(GetComponent<ZombieSounds>().footstepSound());
         attackStarted = false;
     }
-
     void Attack()
     {
         if (attackStarted == false)
@@ -108,7 +102,6 @@ public class ZombieController : MonoBehaviour
         }
         FaceTarget();
     }
-
     void FaceTarget()
     {
         if(health > 0)      //won't face target while dead
@@ -118,7 +111,6 @@ public class ZombieController : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
         }
     }
-
     public void TakeDamage(float damage)
     {
         health -= damage;
@@ -130,10 +122,8 @@ public class ZombieController : MonoBehaviour
                 Death();
                 isAlive = false;
             }
-
         }
     }
-
     void Death()
     {
         agent.isStopped = true;
@@ -149,7 +139,6 @@ public class ZombieController : MonoBehaviour
         Destroy(gameObject, 6f);    //destroy the zombie after 6 seconds.
         target.GetComponent<PlayerData>().increaseZombieKilled();
     }
-
     public float GetHealth()
     {
         return health;

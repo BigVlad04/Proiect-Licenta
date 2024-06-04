@@ -1,6 +1,8 @@
 using TMPro;
 using UnityEngine;
-
+/// <summary>
+/// Display the wave number
+/// </summary>
 public class WaveText : MonoBehaviour
 {
     public GameObject waveSpawner;

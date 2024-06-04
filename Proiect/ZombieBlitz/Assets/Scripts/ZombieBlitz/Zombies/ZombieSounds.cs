@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-
 public class ZombieSounds : MonoBehaviour
 {
     AudioSource audioSource;
@@ -17,7 +16,6 @@ public class ZombieSounds : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         timer = 0;
     }
-
     void Update()
     {
         timer += Time.deltaTime;
@@ -28,19 +26,16 @@ public class ZombieSounds : MonoBehaviour
                 playGrowlSound();
         }
     }
-
     public void playZombieHitSound()
     {
         audioSource.PlayOneShot(zombieHitSound[Random.Range(0, zombieHitSound.Length)]);        //play a random zombie hit sound from the selection
     }
-
     void playGrowlSound()
     {
         AudioClip growl = growlSound[Random.Range(0, growlSound.Length)];   //pick a random growl sound
         audioSource.pitch = Random.Range(0.7f, 1f);     //pick a random pitch
         audioSource.PlayOneShot(growl);
     }
-
     public IEnumerator footstepSound()
     {
         if (!footstepSoundPlaying)      //if we are not already playing footstep sound

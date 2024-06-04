@@ -3,7 +3,6 @@ using UnityEngine;
 /// <summary>
 /// Used for counting the number of ALIVE zombies in the game
 /// </summary>
-
 public class ZombieCounter : MonoBehaviour
 {
     int zombiesLeft;
@@ -12,7 +11,6 @@ public class ZombieCounter : MonoBehaviour
     {
         StartCoroutine(CountZombies());
     }
-
     void Update()
     {
         if (completedCount)
@@ -27,7 +25,6 @@ public class ZombieCounter : MonoBehaviour
     {
         return zombiesLeft;
     }
-
     IEnumerator CountZombies()     //count the zombies every .3 seconds
     {
         int count = 0;
@@ -44,6 +41,4 @@ public class ZombieCounter : MonoBehaviour
         yield return new WaitForSeconds(.3f);       //will only count again after .3 seconds, as performing the count every frame would be unoptimal.
         completedCount = false;
     }
-
-
 }

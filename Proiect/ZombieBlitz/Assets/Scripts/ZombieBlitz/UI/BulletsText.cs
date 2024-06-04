@@ -18,7 +18,6 @@ public class BulletsText : MonoBehaviour
     {
         getGunsData();
     }
-
     void getGunsData() 
     {
         GunData[] guns;
@@ -43,7 +42,6 @@ public class BulletsText : MonoBehaviour
             }
         }
     }
-
     void Update()
     {
         int currentAmmo;
@@ -74,7 +72,6 @@ public class BulletsText : MonoBehaviour
         }
         DisplayText(currentAmmo, magazineSize);
     }
-
     void DisplayText(int currentAmmo, int magazineSize) { 
         bulletsText.text = ":" + currentAmmo + "/" + magazineSize;
     }

@@ -2,7 +2,6 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
-
 public class GameManager : MonoBehaviour
 {
     public AudioMixer audioMixer;
@@ -21,7 +20,6 @@ public class GameManager : MonoBehaviour
         StaticValues.zombiesKilled = FindAnyObjectByType<PlayerData>().getZombiesKilled();      //
         SceneManager.LoadScene("GameOver");
     }
-
     public IEnumerator GameWon() 
     {
         GameObject.Find("Crosshair").SetActive(false);
