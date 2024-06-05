@@ -44,7 +44,7 @@ public class GunScript : MonoBehaviour
         }
         if (Input.GetButton("Fire1"))
         {
-            if (gunData.currentAmmo > 0 && Time.time >= nextFireTime )  
+            if (gunData.currentAmmo > 0 && Time.time >= nextFireTime && PauseMenu.isGamePaused == false)  
             {
                 nextFireTime = Time.time + 1f / gunData.fireRate;
                 Shoot();

@@ -13,7 +13,9 @@ public class GameManager : MonoBehaviour
         GameObject.Find("Crosshair").SetActive(false);
         FindAnyObjectByType<PlayerMovement>().enabled = false;      
         YouDiedText.SetActive(true);
-        yield return new WaitForSeconds(5);             //display "You Died!" text for 5 seconds, then change to the game over screen
+        Time.timeScale = 0.3f;
+        yield return new WaitForSeconds(2);             //display "You Died!" text for 5 seconds, then change to the game over screen
+        Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
         StaticValues.wavesSurvived = FindAnyObjectByType<WaveSpawner>().getWaveNumber()-1;      //these values are needed in the game over screen so they are stored in static values
