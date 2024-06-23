@@ -1,0 +1,21 @@
+2 minute
+
+-Intri in joc
+-This is the main menu
+-We have a basic options screen that allows us to dial the volume.
+-Go back, press play.
+-Now that the game has started, as you can see we find ourselves in a city, we have a pistol equipped.
+-Move around, move camera
+-Show Pause Menu
+-We can switch between the weapons
+-Fire at random surface.
+-Demonstrate empty magazine 
+-Reload weapon (shows animation, UI updating)
+-Fire, switch weapon, return.
+-Zombies will appear.
+-They will always try to follow the player. (run from the zombies).
+-They can be shot, and damage is dealt depending on the body part that is hit. Headshots deal the most damage.
+-They will try to attack the player. Take some damage, health will decrease.
+-There are four enemy types (show the big zombies' health)
+-Lose on purpose
+-Show game Over screen.
